@@ -1,0 +1,24 @@
+.navbar {
+  background-color: #fff;
+  box-sizing: border-box;
+  z-index: 100;
+  border: 1px solid #707070;
+}
+
+.button {
+  background-color: #186aa5;
+  width: 117.5px;
+  height: 58px;
+  font-size: 24px;
+  color: #e8eff7;
+  margin: 0 20px;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    background-color: #fff;
+    box-sizing: border-box;
+    z-index: 100;
+    border: none;
+  }
+}
