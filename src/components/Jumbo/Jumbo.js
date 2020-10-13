@@ -38,7 +38,7 @@ const Jumbo = () => {
           </div>
         </div>
       </div>
-      {/* <div className={classes.mobileOnly}>
+      <div className={classes.mobileOnly}>
         <div
           className="jumbotron"
           style={{ backgroundColor: "#f7f7f7", borderRadius: "98px" }}
@@ -46,18 +46,35 @@ const Jumbo = () => {
           <div className="row justify-content-center">
             <h1 className={classes.heading}>How it works</h1>
           </div>
-          <ul>
-            <li className={classes.li}>1</li>
-            <li className={classes.li}>2</li>
-            <li className={classes.li}>3</li>
-          </ul>
-          <div>
-            <p className={classes.p2}>Measure</p>
-            <p className={classes.p2}>Understand</p>
-            <p className={classes.p2}>Improve</p>
+          <div className="row justify-content-around">
+            <div>
+              <div className={classes.circle}>1</div>
+              <div className={classes.circle}>2</div>
+              <div className={classes.circle}>3</div>
+            </div>
+            <div>
+              <div>
+                <p className={classes.p2}>Improve</p>
+                <p className={classes.text}>
+                  your ability so you can practice the topics that matter.
+                </p>
+              </div>
+              <div>
+                <p className={classes.p2}>Understand</p>
+                <p className={classes.text}>
+                  your performance across all learning outcomes
+                </p>
+              </div>
+              <div>
+                <p className={classes.p2}>Measure</p>
+                <p className={classes.text}>
+                  your grades and track improvement from our dashboard.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };

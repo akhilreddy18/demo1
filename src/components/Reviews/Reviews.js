@@ -14,8 +14,8 @@ const Reviews = () => {
           We're changing the lives of thousands of students across the UK.
         </p>
       </div>
-      <div className="row justify-content-around">
-        <img src={Previous} alt="Go back"></img>
+      <div className={classes.evenSpace}>
+        <img className={classes.img} src={Previous} alt="Previous"></img>
         <div>
           <div className={classes.card}>
             <p className={classes.p1}>
@@ -46,7 +46,7 @@ const Reviews = () => {
             <p className={classes.p2}>Samuel, Year 11</p>
           </div>
         </div>
-        <img src={Next} alt="next"></img>
+        <img className={classes.img} src={Next} alt="next"></img>
       </div>
     </div>
   );

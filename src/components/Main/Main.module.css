@@ -1,8 +1,7 @@
 .heading {
-  width: 724px;
-  height: 174px;
+  width: 780px;
   font-size: 48px;
-  color: #1c1a1d;
+  color: #186aa5;
   font-weight: bold;
   text-align: center;
   margin: 20px;
@@ -11,9 +10,8 @@
 
 .description {
   font-size: 32px;
-  width: 598px;
-  height: 159px;
-  color: #605e62;
+  width: 750px;
+  color: #050505;
   font-weight: normal;
   text-align: center;
   opacity: 75%;
@@ -24,14 +22,20 @@
 
 .text {
   width: 800px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  margin: 140px 5px;
+}
+
+.img {
+  margin-left: 80px;
 }
 
 .tryButton {
-  background-color: #6212ee;
+  background-color: #3d2ef5;
   color: #fff;
   display: block;
   width: 386px;
@@ -44,38 +48,33 @@
   margin-bottom: 55px;
 }
 
-.learnButton {
-  background-color: #ece0fd;
-  color: #6212ee;
-  width: 254px;
-  height: 61px;
-  font-size: 32px;
-  font-weight: 550;
-  letter-spacing: 2.85px;
-  border: 1px solid #6212ee;
-  border-radius: 3px;
-  outline: none;
-  margin-bottom: 60px;
-}
-
 .p {
   font-size: 44px;
   font-weight: bold;
-  color: #707070;
+  color: #186aa5;
 }
 
 .p1 {
   display: none;
 }
 
+.institutions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.mobileInstitutions {
+  display: none;
+}
+
 @media (max-width: 600px) {
   .heading {
-    width: 320px;
+    width: 270px;
     height: 140px;
     font-size: 26px;
-    color: #1c1a1d;
-    font-weight: bold;
-    text-align: center;
     padding: 0;
     margin: 10px 11px;
     line-height: normal;
@@ -84,37 +83,17 @@
     display: none;
   }
   .tryButton {
-    background-color: #6212ee;
-    color: #fff;
-    display: block;
-    width: 208px;
+    width: 230px;
     height: 44px;
     font-size: 20px;
-    font-weight: 550;
     letter-spacing: 1.78px;
-    border-radius: 4px;
-    border: 1px solid;
     margin-bottom: 25px;
   }
-  .learnButton {
-    background-color: #ece0fd;
-    color: #6212ee;
-    width: 136px;
-    height: 38px;
-    font-size: 15px;
-    font-weight: 550;
-    letter-spacing: 1.33px;
-    border: 1px solid #6212ee;
-    border-radius: 3px;
-    outline: none;
-    margin-bottom: 20px;
-  }
   .text {
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 400px;
+    height: 260px;
+    margin: 20px 0;
+    justify-content: space-around;
   }
   .p {
     font-size: 20px;
@@ -123,13 +102,24 @@
     text-align: center;
   }
   .p1 {
+    display: block;
     font-size: 12px;
     font-weight: bold;
     color: #707070;
     text-align: center;
     width: 240px;
   }
-  img {
+  .img {
     display: none;
+  }
+  .institutions {
+    display: none;
+  }
+  .mobileInstitutions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
   }
 }

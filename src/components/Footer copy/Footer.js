@@ -69,7 +69,7 @@ const Footer = () => {
               support@edicat.co.uk
             </a>
           </div>
-          <div style={{ float: "right" }}>
+          <div className={classes.containIcon}>
             <a href="/instagram">
               <InstagramIcon fontSize="large" className={classes.icon} />
             </a>
@@ -81,6 +81,9 @@ const Footer = () => {
             </a>
           </div>
         </div>
+        <div className={classes.Footer1}>
+          <p className={classes.footText}>© Edicat Learning Ltd. 2020</p>
+        </div>
       </div>
       <div className={classes.mobileOnly}>
         <div className={classes.mobileFooter}>
@@ -91,6 +94,7 @@ const Footer = () => {
               support@edicat.co.uk
             </a>
           </p>
+          <p className={classes.p2}>© Edicat Learning Ltd. 2020</p>
         </div>
       </div>
     </div>

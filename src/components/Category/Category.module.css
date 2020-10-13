@@ -4,7 +4,7 @@ li {
   text-align: center;
   line-height: 1.5em;
   border-radius: 0.75em;
-  background: #707070;
+  background: #186aa5;
   margin-right: 50px;
   display: inline-block;
   color: white;
@@ -23,9 +23,8 @@ li:first-child::before {
 }
 
 .Category {
-  min-width: 170px;
-  padding: 0 15px;
-  height: 112px;
+  padding: 0 20px;
+  height: 83px;
   font-size: 44px;
   font-weight: bold;
   color: #186aa5;
@@ -37,6 +36,19 @@ li:first-child::before {
   margin-top: 50px;
 }
 
+.containCat {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 .heading {
   color: #186aa5;
   font-size: 58px;
@@ -45,46 +57,53 @@ li:first-child::before {
 
 .p {
   font-size: 28px;
-  color: #186aa5;
-  opacity: 80%;
+  color: #1c1a1d;
   margin-top: 50px;
 }
 
 .p1 {
   font-size: 28px;
-  color: #186aa5;
-  opacity: 80%;
+  color: #1c1a1d;
   margin-bottom: 50px;
 }
-
+/* For mobile ************************************************************************************************************* */
+/* For mobile ************************************************************************************************************* */
+/* For mobile ************************************************************************************************************* */
+/* For mobile ************************************************************************************************************* */
+/* For mobile ************************************************************************************************************* */
 @media (max-width: 600px) {
   .heading {
-    color: #186aa5;
     width: 280px;
     font-size: 30px;
-    font-weight: bold;
     text-align: center;
   }
+
   li {
     display: none;
   }
   .Category {
-    min-width: 105px;
-    margin: 20px 100px;
-    height: 80px;
+    height: 83px;
     font-size: 33px;
-    font-weight: bold;
-    color: #186aa5;
-    border: 2px solid #186aa5;
-    border-radius: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+    width: 200px;
   }
   .p {
     display: none;
   }
   .p1 {
     display: none;
+  }
+  .containCat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

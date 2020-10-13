@@ -16,18 +16,12 @@ const navbar = () => {
               Home
             </Nav.Link>
             <Nav.Link href="#link" style={style.links}>
-              Our Assessments
-            </Nav.Link>
-            <Nav.Link href="#link" style={style.links}>
-              Resources
-            </Nav.Link>
-            <Nav.Link href="#link" style={style.links}>
               About Us
             </Nav.Link>
           </Nav>
           <Form inline>
-            <Button className={classes.button}>Log In</Button>
-            <Button className={classes.button}>Sign Up</Button>
+            <Button className={classes.loginButton}>LOG IN</Button>
+            <Button className={classes.tryButton}>TRY IT FOR FREE</Button>
           </Form>
         </Navbar.Collapse>
       </Navbar>
@@ -40,14 +34,6 @@ const style = {
     color: "#707070",
     fontSize: "40px",
     fontWeight: "bold",
-  },
-  button: {
-    backgroundColor: "#186aa5",
-    width: "117.5px",
-    height: "58px",
-    fontSize: "24px",
-    color: "#e8eff7",
-    margin: "0 20px",
   },
   links: {
     fontSize: "20px",

@@ -40,7 +40,8 @@ const MobileFeatures = () => {
 
 const style = {
   container: {
-    backgroundColor: "#f7f7f7",
+    backgroundColor: "#fff",
+    border: "6px solid #f7f7f7",
     borderRadius: "98px",
   },
 };
