@@ -9,8 +9,9 @@ const LandingPage = () => {
       <Navbar />
       <div className="container-fluid">
         <Main />
+        <Foooter />
       </div>
-      <Foooter />
+      
     </div>
   );
 };
