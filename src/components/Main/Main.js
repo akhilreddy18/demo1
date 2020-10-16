@@ -14,6 +14,7 @@ import Logo4 from "../../assets/Images/Image 4.png";
 import Logo5 from "../../assets/Images/Image 5.png";
 import Logo6 from "../../assets/Images/next.svg";
 import Logo7 from "../../assets/Images/previous.svg";
+import Logo8 from "../../assets/Images/image6.png";
 
 const Main = () => {
   return (
@@ -46,7 +47,7 @@ const Main = () => {
       <div className={classes.institutions}>
         <img style={style.image} src={Logo3} alt="Logo3"></img>
         <img style={style.image} src={Logo2} alt="Logo2"></img>
-        <img style={style.image} src={Logo4} alt="Logo4"></img>
+        <img style={style.image} src={Logo8} alt="Logo4"></img>
         <img style={style.image} src={Logo1} alt="Logo1"></img>
         <img style={style.image} src={Logo5} alt="Logo5"></img>
       </div>

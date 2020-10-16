@@ -73,7 +73,6 @@ const Features = () => {
                     style={{ marginBottom: "0.73vw" }}
                   ></img>
                   <p className={classes.p1}>Exam-Style Questions</p>
-                  </div>
                   <p className={classes.p2}>
                     Our questions are the type you'd expect to get in exams to
                     give you good practice.
@@ -87,7 +86,6 @@ const Features = () => {
                     style={{ marginBottom: "2.2vw" }}
                   ></img>
                   <p className={classes.p1}>Questions Variety</p>
-                  </div>
                   <p className={classes.p2}>
                     We have over 700 questions that cover the entire curriculum
                     that you can filter by topic, difficulty and tier.
