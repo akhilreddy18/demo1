@@ -3,7 +3,7 @@
   margin: 0 100px;
   background-color: #fff;
   box-shadow: 0px 20px 40px #2699fb33;
-  opacity: 1;
+  /* opacity: 1; */
   display: flex;
   flex-direction: column;
   align-items: center;

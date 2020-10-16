@@ -15,13 +15,13 @@ const Category = () => {
       </ul>
       <div className={classes.containCat}>
         <p className={classes.Category}>Tier</p>
-        <p className={classes.Category}>Grade</p>
-        <p className={classes.Category}>Topic</p>
+          <p className={classes.Category}>Grade</p>
+          <p className={classes.Category}>Topic</p>
         <p className={classes.Category}>Calculator</p>
       </div>
       <div className={classes.row}>
-        <p className={classes.Category}>Foundation</p>
-        <p className={classes.Category}>Higher</p>
+          <p className={classes.Category}>Foundation</p>
+          <p className={classes.Category}>Higher</p>
       </div>
       <div className="row justify-content-center">
         <p className={classes.p}>Don't know where to start? </p>

@@ -47,20 +47,23 @@ const Footer = () => {
               Careers
             </a>
           </div>
-          <div className={classes.column}>
-            <a className={classes.anchor} href="/company">
-              Legal
+          <div style={{marginBottom: 25}}>
+            <div className={classes.column}>
+              <a className={classes.anchor} href="/company">
+                Legal
             </a>
-            <a className={classes.an} href="/home">
-              Terms of Use
+              <a className={classes.an} href="/home">
+                Terms of Use
             </a>
-            <a className={classes.an} href="/aboutus">
-              Privacy Policy
+              <a className={classes.an} href="/aboutus">
+                Privacy Policy
             </a>
-            <a className={classes.an} href="/resources">
-              GDPR
+              <a className={classes.an} href="/resources">
+                GDPR
             </a>
+            </div>
           </div>
+          <div style={{marginBottom: 75}}>
           <div className={classes.column}>
             <a className={classes.anchor} href="/company">
               Contact Us
@@ -68,6 +71,7 @@ const Footer = () => {
             <a className={classes.an} href="/home">
               support@edicat.co.uk
             </a>
+          </div>
           </div>
           <div className={classes.containIcon}>
             <a href="/instagram">

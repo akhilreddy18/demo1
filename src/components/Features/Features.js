@@ -30,7 +30,7 @@ const Features = () => {
                 </div>
                 <div className={classes.evenSpace}>
                   <img src={Logo3} alt="Logo3"></img>
-                  <div style={{ paddingTop: "20px" }}>
+                  <div style={{ paddingTop: "30px" }}>
                     <p className={classes.p1}>Adaptive Test</p>
                   </div>
                   <p className={classes.p2}>
@@ -52,7 +52,9 @@ const Features = () => {
               <div className="row justify-content-around">
                 <div className={classes.evenSpace}>
                   <img src={Logo5} alt="Logo2"></img>
+                  <div style={{paddingTop: "10px"}}>
                   <p className={classes.p1}>Exam-Style Questions</p>
+                  </div>
                   <p className={classes.p2}>
                     Our questions are the type you'd expect to get in exams to
                     give you good practice.
@@ -60,7 +62,9 @@ const Features = () => {
                 </div>
                 <div className={classes.evenSpace}>
                   <img src={Logo6} alt="Logo3"></img>
+                  <div style={{paddingTop: "30px"}}>
                   <p className={classes.p1}>Questions Variety</p>
+                  </div>
                   <p className={classes.p2}>
                     We have over 700 questions that cover the entire curriculum
                     that you can filter by topic, difficulty and tier.

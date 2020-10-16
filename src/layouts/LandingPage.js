@@ -5,9 +5,11 @@ import Foooter from "../components/Footer copy/Footer";
 
 const LandingPage = () => {
   return (
-    <div className="container-fluid">
+    <div>
       <Navbar />
-      <Main />
+      <div className="container-fluid">   
+        <Main />
+      </div>
       <Foooter />
     </div>
   );

@@ -33,7 +33,7 @@ li:first-child::before {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .containCat {
@@ -41,6 +41,13 @@ li:first-child::before {
   flex-direction: row;
   justify-content: space-around;
   margin-top: 50px;
+}
+
+.containCat1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 30px;
 }
 
 .row {
