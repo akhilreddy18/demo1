@@ -1,17 +1,17 @@
-li {
+.li {
   width: 1.5em;
   height: 1.5em;
   text-align: center;
   line-height: 1.5em;
   border-radius: 0.75em;
   background: #186aa5;
-  margin-right: 50px;
+  margin-right: 3.66vw;
   display: inline-block;
   color: white;
   position: relative;
 }
 
-li:first-child::before {
+.li:first-child::before {
   content: "";
   position: absolute;
   top: 0.75em;
@@ -23,24 +23,24 @@ li:first-child::before {
 }
 
 .Category {
-  padding: 0 20px;
-  height: 83px;
-  font-size: 44px;
+  padding: 0 1.5vw;
+  height: 6.07vw;
+  font-size: 3.22vw;
   font-weight: bold;
   color: #186aa5;
   border: 2px solid #186aa5;
-  border-radius: 28px;
+  border-radius: 2.05vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 3.66vw;
 }
 
 .containCat {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 50px;
+  margin-top: 3.66vw;
 }
 
 .row {
@@ -51,20 +51,20 @@ li:first-child::before {
 
 .heading {
   color: #186aa5;
-  font-size: 58px;
+  font-size: 4vw;
   font-weight: bold;
 }
 
 .p {
-  font-size: 28px;
+  font-size: 2.05vw;
   color: #1c1a1d;
-  margin-top: 50px;
+  margin-top: 3.66vw;
 }
 
 .p1 {
-  font-size: 28px;
+  font-size: 2.05vw;
   color: #1c1a1d;
-  margin-bottom: 50px;
+  margin-bottom: 3.66vw;
 }
 /* For mobile ************************************************************************************************************* */
 /* For mobile ************************************************************************************************************* */
@@ -78,7 +78,7 @@ li:first-child::before {
     text-align: center;
   }
 
-  li {
+  .li {
     display: none;
   }
   .Category {

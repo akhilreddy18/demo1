@@ -1,24 +1,25 @@
 .Footer {
   bottom: 0;
   left: 0px;
-  height: 153px;
+  height: 11.2vw;
   background-color: #186aa5;
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-around; */
+  padding-top: 1.09vw;
+  /* align-items: center; */
 }
 
 .p {
-  font-size: 25px;
+  font-size: 1.83vw;
   text-align: left;
-  width: 323px;
+  width: 23.64vw;
   color: #fff;
 }
 
 .an {
   color: #fff;
-  font-size: 16px;
+  font-size: 1.17vw;
   text-decoration: none;
   opacity: 80%;
 }
@@ -31,7 +32,7 @@ a:hover {
 
 .anchor {
   color: #fff;
-  font-size: 16px;
+  font-size: 1.17vw;
   text-decoration: none;
   font-weight: 550;
 }
@@ -42,18 +43,19 @@ a:hover {
 
 .containIcon {
   display: flex;
-  justify-self: end;
-  align-self: center;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  align-items: center;
 }
 .icon {
   color: #fff;
-  margin: 0 8px;
+  margin: 0 0.58vw;
 }
 
-.Footer1 {
+/* .Footer1 {
   bottom: 0;
   left: 0px;
-  height: 30px;
+  height: 20px;
   background-color: #186aa5;
   display: flex;
   flex-direction: row;
@@ -62,13 +64,19 @@ a:hover {
 .footText {
   font-size: 15px;
   color: #fff;
-  margin-bottom: 5px;
-  padding-right: 10px;
-  opacity: 80%;
-}
+  filter: opacity(80%);
+  margin-right: 10px;
+} */
 .mobileOnly {
   display: none;
 }
+
+/* Mobile Only ////////////////////////////////////////
+//////////////////////////////////////////////////////
+///////////////////////////////////////////////////
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+*/
 
 @media (max-width: 600px) {
   .DesktopOnly {
@@ -76,15 +84,15 @@ a:hover {
   }
   .mobileOnly {
     display: block;
-  }
-  .mobileFooter {
     background-color: #186aa5;
-    height: 62px;
-    display: flex;
+    height: 324px;
+    padding: 10px 28px;
+    /* display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: center; */
   }
+
   .p1 {
     color: #fff;
     font-size: 15px;
@@ -97,5 +105,27 @@ a:hover {
     text-align: center;
     margin-bottom: 0;
     opacity: 70%;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .icon {
+    color: #fff;
+    margin: 0 0;
+    margin-left: 8px;
+  }
+  .an {
+    font-size: 14px;
+  }
+  .anchor {
+    font-size: 14px;
   }
 }

@@ -1,29 +1,42 @@
 .heading {
   color: #186aa5;
-  font-size: 58px;
+  /* font-size: 58px; */
+  font-size: 4.25vw;
   font-weight: bold;
 }
 
 .p {
-  font-size: 24px;
+  font-size: 1.75vw;
   color: #707070;
 }
 
 .card {
-  width: 357px;
-  height: 293px;
+  /* width: 357px; */
+  width: 26.1vw;
+  /* height: 293px; */
+  height: 21.4vw;
   background: #ffffff 0% 0% no-repeat padding-box;
-  box-shadow: 0px 5px 13px #00000033;
+  box-shadow: 0px 0.36vw 0.95vw #00000033;
   mix-blend-mode: multiply;
   opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 0.75vw;
+}
+
+.img {
+  width: 3vw;
+  height: 4vw;
 }
 
 .evenSpace {
+  margin-top: 1.5vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin: 0 50px;
 }
 
 .displayCard {
@@ -31,21 +44,28 @@
 }
 
 .p1 {
-  font-size: 16px;
+  /* font-size: 16px; */
+  font-size: 1.17vw;
   color: #362e2e;
   text-align: center;
-  line-height: 40px;
-  padding-top: 30px;
-  margin: 40px 5px;
+  /* line-height: 40px; */
+  line-height: 2.9vw;
+  /* padding-top: 30px; */
+  padding-top: 2.2vw;
 }
 
 .p2 {
-  font-size: 24px;
+  /* font-size: 24px; */
+  font-size: 1.757vw;
   font-weight: bold;
   color: #186aa5;
   text-align: center;
 }
+/* MObile onlyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
+yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
+yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
 
+*/
 @media (max-width: 600px) {
   .heading {
     font-size: 30px;
@@ -58,10 +78,8 @@
   .card {
     width: 183px;
     height: 165px;
-    margin-top: 20px;
-    margin-right: 0px;
     background: #ffffff 0% 0% no-repeat padding-box;
-    box-shadow: 0px 5px 13px #00000033;
+    box-shadow: 0px 0.35vw 0.95vw #00000033;
     mix-blend-mode: multiply;
     opacity: 1;
   }

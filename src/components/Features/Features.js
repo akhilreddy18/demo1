@@ -19,7 +19,12 @@ const Features = () => {
             <div className={classes.verticalSpacing}>
               <div className="row justify-content-around">
                 <div className={classes.evenSpace}>
-                  <img src={Logo2} alt="Logo2"></img>
+                  <img
+                    className={classes.image}
+                    src={Logo2}
+                    alt="Logo2"
+                    style={{ marginBottom: "10px" }}
+                  ></img>
                   <p className={classes.p1}>
                     Personalised<br></br> Recommendations
                   </p>
@@ -29,8 +34,13 @@ const Features = () => {
                   </p>
                 </div>
                 <div className={classes.evenSpace}>
-                  <img src={Logo3} alt="Logo3"></img>
-                  <div style={{ paddingTop: "20px" }}>
+                  <img
+                    className={classes.image}
+                    src={Logo3}
+                    alt="Logo3"
+                    style={{ marginBottom: "3.3vw" }}
+                  ></img>
+                  <div>
                     <p className={classes.p1}>Adaptive Test</p>
                   </div>
                   <p className={classes.p2}>
@@ -39,8 +49,13 @@ const Features = () => {
                   </p>
                 </div>
                 <div className={classes.evenSpace}>
-                  <img src={Logo1} alt="Logo1"></img>
-                  <div style={{ marginTop: "20px" }}>
+                  <img
+                    className={classes.image}
+                    src={Logo1}
+                    alt="Logo1"
+                    style={{ marginBottom: "0.73vw" }}
+                  ></img>
+                  <div>
                     <p className={classes.p1}>Improvement Tracker</p>
                   </div>
                   <p className={classes.p2}>
@@ -51,7 +66,12 @@ const Features = () => {
               </div>
               <div className="row justify-content-around">
                 <div className={classes.evenSpace}>
-                  <img src={Logo5} alt="Logo2"></img>
+                  <img
+                    className={classes.image}
+                    src={Logo5}
+                    alt="Logo2"
+                    style={{ marginBottom: "0.73vw" }}
+                  ></img>
                   <p className={classes.p1}>Exam-Style Questions</p>
                   <p className={classes.p2}>
                     Our questions are the type you'd expect to get in exams to
@@ -59,7 +79,12 @@ const Features = () => {
                   </p>
                 </div>
                 <div className={classes.evenSpace}>
-                  <img src={Logo6} alt="Logo3"></img>
+                  <img
+                    className={classes.img}
+                    src={Logo6}
+                    alt="Logo3"
+                    style={{ marginBottom: "2.2vw" }}
+                  ></img>
                   <p className={classes.p1}>Questions Variety</p>
                   <p className={classes.p2}>
                     We have over 700 questions that cover the entire curriculum
@@ -67,7 +92,7 @@ const Features = () => {
                   </p>
                 </div>
                 <div className={classes.evenSpace}>
-                  <img src={Logo4} alt="Logo1"></img>
+                  <img src={Logo4} alt="Logo1" className={classes.image}></img>
                   <p className={classes.p1}>Parental Reports</p>
                   <p className={classes.p2}>
                     Receive reports on your child's performance and improvement

@@ -7,34 +7,42 @@ const Jumbo = () => {
       <div className={classes.DesktopOnly}>
         <div
           className="jumbotron"
-          style={{ backgroundColor: "#f7f7f7", borderRadius: "98px" }}
+          style={{ backgroundColor: "#f7f7f7", borderRadius: "7.17vw" }}
         >
           <div className="row justify-content-center">
             <h1 className={classes.heading}>How it works</h1>
           </div>
-          <ul className="row justify-content-around">
-            <li className={classes.li}>1</li>
-            <li className={classes.li}>2</li>
-            <li className={classes.li}>3</li>
-          </ul>
           <div className="row justify-content-around">
-            <p className={classes.p2}>Measure</p>
-            <p className={classes.p2}>Understand</p>
-            <p className={classes.p2}>Improve</p>
-          </div>
-          <div className="row justify-content-around">
-            <p className={classes.p1} style={{ width: "336px" }}>
-              Our test adapts its questions to your ability and needs so you can
-              practice the topics that matter.
-            </p>
-            <p className={classes.p1} style={{ width: "362px" }}>
-              Learn about your performance across all learning outcomes to see
-              what’s holding you back from the grades you deserve.
-            </p>
-            <p className={classes.p1} style={{ width: "408px" }}>
-              Study the areas we recommend to see the biggest improvement to
-              your grades and track improvement from our dashboard.
-            </p>
+            <div className={classes.column}>
+              <ul>
+                <li className={classes.lib}>1</li>
+              </ul>
+              <p className={classes.p2}>Measure</p>
+              <p className={classes.p1} style={{ width: "24vw" }}>
+                Our test adapts its questions to your ability and needs so you
+                can practice the topics that matter.
+              </p>
+            </div>
+            <div className={classes.column}>
+              <ul>
+                <li className={classes.li}>2</li>
+              </ul>
+              <p className={classes.p2}>Understand</p>
+              <p className={classes.p1} style={{ width: "26.35vw" }}>
+                Learn about your performance across all learning outcomes to see
+                what’s holding you back from the grades you deserve.
+              </p>
+            </div>
+            <div className={classes.column}>
+              <ul>
+                <li className={classes.li}>3</li>
+              </ul>
+              <p className={classes.p2}>Improve</p>
+              <p className={classes.p1} style={{ width: "29.28vw" }}>
+                Study the areas we recommend to see the biggest improvement to
+                your grades and track improvement from our dashboard.
+              </p>
+            </div>
           </div>
         </div>
       </div>
