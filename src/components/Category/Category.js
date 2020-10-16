@@ -8,10 +8,10 @@ const Category = () => {
         <h1 className={classes.heading}>Practice questions by...</h1>
       </div>
       <ul className={classes.containCat}>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li className={classes.li}></li>
+        <li className={classes.li}></li>
+        <li className={classes.li}></li>
+        <li className={classes.li}></li>
       </ul>
       <div className={classes.containCat}>
         <p className={classes.Category}>Tier</p>

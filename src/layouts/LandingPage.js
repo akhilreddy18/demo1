@@ -7,7 +7,7 @@ const LandingPage = () => {
   return (
     <div>
       <Navbar />
-      <div className="container-fluid">   
+      <div className="container-fluid">
         <Main />
       </div>
       <Foooter />

@@ -21,20 +21,16 @@ const Main = () => {
       <div className="row">
         <div className={classes.text}>
           <p className={classes.heading}>
-            Track & improve your scores with our personalised math tests.
+            Track & improve your grades<br></br>with our personalised math
+            tests.
           </p>
           <p className={classes.description}>
             Our assessment platform learns your ability and generates questions
-            your growth areas<br></br> to accelerate improvement.
+            targeting your growth areas <br></br> to accelerate improvement.
           </p>
           <button className={classes.tryButton}>TRY IT FOR FREE</button>
         </div>
-        <img
-          src={Logo}
-          alt="Logo"
-          className={classes.img}
-          style={{ width: "40%" }}
-        ></img>
+        <img src={Logo} alt="Logo" className={classes.img}></img>
       </div>
       <Jumbo />
       <Category />

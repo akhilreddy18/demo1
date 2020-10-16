@@ -1,44 +1,44 @@
 .card {
-  width: 694px;
-  margin: 0 100px;
+  width: 51vw;
+  margin: 0 7.32vw;
   background-color: #fff;
-  box-shadow: 0px 20px 40px #2699fb33;
-  /* opacity: 1; */
+  box-shadow: 0px 1.5vw 3vw #2699fb33;
+  opacity: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 0;
+  padding: 3.66vw 0;
 }
 .p {
-  font-size: 25px;
+  font-size: 1.83vw;
   color: #1c1a1d;
   text-align: center;
-  max-width: 400px;
-  margin: 30px 0;
+  max-width: 29.28vw;
+  margin: 2.2vw 0;
 }
 
 .input {
-  height: 47px;
-  width: 300px;
+  height: 3.44vw;
+  width: 22vw;
   border: 1px solid #bce0fd;
-  font-size: 16px;
+  font-size: 1.17vw;
   outline: none;
   text-align: center;
   /* opacity: 40%; */
 }
 
 .heading {
-  font-size: 50px;
+  font-size: 3.3vw;
   font-weight: normal;
   color: #186aa5;
-  font-weight: 550;
+  font-weight: 700;
 }
 
 .button {
   background-color: #3d2ef5;
-  height: 48px;
-  width: 120px;
-  font-size: 17px;
+  height: 3.35vw;
+  width: 8.78vw;
+  font-size: 1.24vw;
   color: #fff;
   outline: none;
   border: none;
