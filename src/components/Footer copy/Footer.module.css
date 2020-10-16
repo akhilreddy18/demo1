@@ -63,7 +63,7 @@ a:hover {
   color: #fff;
   margin-bottom: 5px;
   padding-right: 10px;
-  opacity: 80%;
+  /* opacity: 80%; */
 }
 .mobileOnly {
   display: none;
@@ -95,6 +95,6 @@ a:hover {
     font-size: 10px;
     text-align: center;
     margin-bottom: 0;
-    opacity: 70%;
+    /* opacity: 70%; */
   }
 }
