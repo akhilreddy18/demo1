@@ -1,11 +1,27 @@
+.catBg {
+  background: url(../../assets/Images/Path\ 882.svg) no-repeat left;
+  background-size: 49vw;
+  position: absolute;
+  left: 0;
+  top: -8vw;
+  right: 0;
+  bottom: -8vw;
+  z-index: -1;
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+}
+
 .li {
-  width: 1.5em;
-  height: 1.5em;
+  width: 1.5vw;
+  height: 1.5vw;
   text-align: center;
-  line-height: 1.5em;
-  border-radius: 0.75em;
+  line-height: 1.5vw;
+  border-radius: 0.75vw;
   background: #186aa5;
-  margin-right: 3.66vw;
+  /* margin-right: 3.66vw; */
   display: inline-block;
   color: white;
   position: relative;
@@ -14,12 +30,18 @@
 .li:first-child::before {
   content: "";
   position: absolute;
-  top: 0.75em;
-  left: -5em;
-  width: 81em;
-  height: 0.1em;
+  top: 0.75vw;
+  left: -20vw;
+  width: 100vw;
+  height: 0.1vw;
   background: #707070;
   z-index: -1;
+}
+
+.line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .Category {
@@ -33,14 +55,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 3.66vw;
+  margin-top: 1.75vw;
+  margin-bottom: 1.75vw;
+  background-color: #fff;
 }
 
 .containCat {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 3.66vw;
+  margin-top: 1.5vw;
 }
 
 .row {
@@ -58,7 +82,7 @@
 .p {
   font-size: 2.05vw;
   color: #1c1a1d;
-  margin-top: 3.66vw;
+  margin-top: 2.5vw;
 }
 
 .p1 {
@@ -105,5 +129,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .catBg {
+    display: none;
   }
 }

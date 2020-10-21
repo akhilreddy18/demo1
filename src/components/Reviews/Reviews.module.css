@@ -1,3 +1,19 @@
+.revBg {
+  background: url(../../assets/Images/Path\ 875.svg) no-repeat right;
+  background-size: 50vw;
+  position: absolute;
+  left: 0;
+  top: -15vw;
+  right: 0;
+  bottom: -8vw;
+  z-index: -1;
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+}
+
 .heading {
   color: #186aa5;
   /* font-size: 58px; */
@@ -71,6 +87,8 @@ yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
     font-size: 30px;
     font-weight: bold;
     text-align: center;
+    width: 300px;
+    margin-bottom: 20px;
   }
   .p {
     display: none;
@@ -104,6 +122,9 @@ yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
     height: 24px;
   }
   .displayCard {
+    display: none;
+  }
+  .revBg {
     display: none;
   }
 }

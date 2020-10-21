@@ -112,6 +112,7 @@ const style = {
   Jumbo: {
     background: "#f7f7f7",
     borderRadius: "98px",
+    marginBottom: "0",
   },
 };
 export default Features;

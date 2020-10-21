@@ -15,9 +15,7 @@ const Footer = () => {
               every child.
             </p>
             <div className={classes.column}>
-              <a className={classes.anchor} href="/company">
-                Company
-              </a>
+              <p className={classes.anchor}>Company</p>
               <a className={classes.an} href="/home">
                 Home
               </a>
@@ -32,9 +30,7 @@ const Footer = () => {
               </a>
             </div>
             <div className={classes.column}>
-              <a className={classes.anchor} href="/company">
-                Community
-              </a>
+              <p className={classes.anchor}>Community</p>
               <a className={classes.an} href="/home">
                 Parents
               </a>
@@ -49,9 +45,7 @@ const Footer = () => {
               </a>
             </div>
             <div className={classes.column}>
-              <a className={classes.anchor} href="/company">
-                Legal
-              </a>
+              <p className={classes.anchor}>Legal</p>
               <a className={classes.an} href="/home">
                 Terms of Use
               </a>
@@ -63,29 +57,37 @@ const Footer = () => {
               </a>
             </div>
             <div className={classes.column}>
-              <a className={classes.anchor} href="/company">
-                Contact Us
-              </a>
+              <p className={classes.anchor}>Contact Us</p>
               <a className={classes.an} href="/home">
                 support@edicat.co.uk
               </a>
             </div>
             <div className={classes.containIcon}>
-              <a href="/instagram">
-                <InstagramIcon fontSize="large" className={classes.icon} />
-              </a>
-              <a href="/twitter">
-                <TwitterIcon fontSize="large" className={classes.icon} />
-              </a>
-              <a href="facebook">
-                <FacebookIcon fontSize="large" className={classes.icon} />
-              </a>
+              <div style={{ paddingTop: "3vw" }}>
+                <a href="/instagram">
+                  <InstagramIcon
+                    style={{ fontSize: "3vw" }}
+                    className={classes.icon}
+                  />
+                </a>
+                <a href="/twitter">
+                  <TwitterIcon
+                    style={{ fontSize: "3vw" }}
+                    className={classes.icon}
+                  />
+                </a>
+                <a href="facebook">
+                  <FacebookIcon
+                    style={{ fontSize: "3vw" }}
+                    className={classes.icon}
+                  />
+                </a>
+              </div>
+              <p className={classes.footText}>© Edicat Learning Ltd. 2020</p>
             </div>
           </div>
         </div>
-        {/* <div className={classes.Footer1}>
-          <p className={classes.footText}>© Edicat Learning Ltd. 2020</p>
-        </div> */}
+        {/* <div className={classes.Footer1}></div> */}
       </div>
       <div className={classes.mobileOnly}>
         <div className={classes.row}>

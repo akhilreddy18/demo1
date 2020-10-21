@@ -7,11 +7,8 @@ const LandingPage = () => {
   return (
     <div>
       <Navbar />
-      <div className="container-fluid">
-        <Main />
-        <Foooter />
-      </div>
-      
+      <Main />
+      <Foooter />
     </div>
   );
 };

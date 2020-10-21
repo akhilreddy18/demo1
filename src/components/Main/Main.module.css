@@ -1,3 +1,35 @@
+.mainBg {
+  background: url(../../assets/Images/Path\ 163.svg) no-repeat right;
+  background-size: 45vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: -16vw;
+  z-index: -1;
+}
+
+/* .background {
+  display: flex;
+  justify-content: space-between;
+} */
+
+.bottomBg {
+  background: url(../../assets/Images/Path\ 879.svg) no-repeat left;
+  background-size: 50vw;
+  position: absolute;
+  left: 0;
+  top: -30vw;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.instContent {
+  position: relative;
+  z-index: 10;
+}
+
 .heading {
   /* width: 780px;
   font-size: 48px; */
@@ -30,7 +62,7 @@
 .text {
   /* width: 800px;
   height: 500px; */
-  width: 60vw;
+  width: 58.5vw;
   height: 33vw;
   display: flex;
   flex-direction: column;
@@ -40,7 +72,7 @@
 }
 
 .img {
-  width: 37vw;
+  width: 40vw;
 }
 
 .tryButton {
@@ -73,9 +105,9 @@
 .institutions {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 
 .mobileInstitutions {
@@ -140,5 +172,11 @@
     width: 220px;
     height: 250px;
     margin-left: 100px;
+  }
+  .mainBg {
+    display: none;
+  }
+  .bottomBg {
+    display: none;
   }
 }

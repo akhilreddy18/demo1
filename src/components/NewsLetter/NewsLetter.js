@@ -3,7 +3,7 @@ import classes from "./NewsLetter.module.css";
 
 const NewsLetter = () => {
   return (
-    <div className="container-fluid">
+    <div>
       <div className={classes.DesktopOnly}>
         <div className="jumbotron" style={style.Jumbo}>
           <div className="row justify-content-center">
@@ -54,7 +54,7 @@ const style = {
   Jumbo: {
     background: "#f7f7f7",
     borderRadius: "98px",
-    marginTop: "50px",
+    marginBottom: "0",
   },
 };
 

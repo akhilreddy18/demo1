@@ -15,19 +15,21 @@ import Logo5 from "../../assets/Images/Image 5.png";
 import Logo6 from "../../assets/Images/next.svg";
 import Logo7 from "../../assets/Images/previous.svg";
 import Logo8 from "../../assets/Images/image6.png";
+import Logo9 from "../../assets/Images/Path 163.svg";
+import { ClassSharp } from "@material-ui/icons";
 
 const Main = () => {
   return (
     <div>
-      <div className="row">
+      <div className={classes.mainBg}></div>
+      <div className="row justify-content-around">
         <div className={classes.text}>
           <p className={classes.heading}>
-            Track & improve your grades<br></br>with our personalised math
-            tests.
+            Track & improve your grades<br></br>with our personalised math tests
           </p>
           <p className={classes.description}>
             Our assessment platform learns your ability and generates questions
-            targeting your growth areas <br></br> to accelerate improvement.
+            targeting your growth areas <br></br> to accelerate improvement
           </p>
           <button className={classes.tryButton}>TRY IT FOR FREE</button>
         </div>
@@ -39,17 +41,32 @@ const Main = () => {
       <MobileFeatures />
       <Reviews />
       <NewsLetter />
-      <div className="row justify-content-center">
-        <p className={classes.p}>
-          Our platform is supported by top institutions
-        </p>
-      </div>
-      <div className={classes.institutions}>
-        <img style={style.image} src={Logo3} alt="Logo3"></img>
-        <img style={style.image} src={Logo2} alt="Logo2"></img>
-        <img style={style.image} src={Logo8} alt="Logo4"></img>
-        <img style={style.image} src={Logo1} alt="Logo1"></img>
-        <img style={style.image} src={Logo5} alt="Logo5"></img>
+      <div style={{ position: "relative", padding: "3.5vw 0" }}>
+        <div className={classes.bottomBg}></div>
+        <div className={classes.instContent}>
+          <div className="row justify-content-center">
+            <p className={classes.p}>
+              Our platform is supported by top institutions
+            </p>
+          </div>
+          <div className={classes.institutions}>
+            <a href="#Logo">
+              <img style={style.image} src={Logo3} alt="Logo3"></img>
+            </a>
+            <a href="#Logo">
+              <img style={style.image} src={Logo2} alt="Logo2"></img>
+            </a>
+            <a href="#Logo">
+              <img style={style.image} src={Logo8} alt="Logo4"></img>
+            </a>
+            <a href="#Logo">
+              <img style={style.image} src={Logo1} alt="Logo1"></img>
+            </a>
+            <a href="#Logo">
+              <img style={style.image} src={Logo5} alt="Logo5"></img>
+            </a>
+          </div>
+        </div>
       </div>
       <div className={classes.mobileInstitutions}>
         <img
@@ -76,8 +93,8 @@ const Main = () => {
 
 const style = {
   image: {
-    width: "13%",
-    height: "5%",
+    width: "14vw",
   },
 };
+
 export default Main;
