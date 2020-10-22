@@ -100,13 +100,13 @@ yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
     background: #ffffff 0% 0% no-repeat padding-box;
     box-shadow: 0px 0.35vw 0.95vw #00000033;
     mix-blend-mode: multiply;
-    opacity: 1;
+    /* opacity: 1; */
   }
 
   .p1 {
     font-size: 14px;
     text-align: center;
-    opacity: 80%;
+    /* opacity: 80%; */
     line-height: 40px;
     margin: 20px 5px;
     line-height: 30px;

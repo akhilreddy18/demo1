@@ -3,7 +3,6 @@
   box-sizing: border-box;
   z-index: 100;
   border-bottom: 1px solid #707070;
-  /* border: 1px solid #707070; */
 }
 
 .loginButton {
@@ -42,6 +41,15 @@
     z-index: 100;
     border: none;
   }
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
   .loginButton {
     margin: 0 0;
   }

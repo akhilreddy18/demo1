@@ -62,7 +62,7 @@
   height: 1px;
   background: #1c1a1d;
   z-index: -1;
-  opacity: 80%;
+  /* opacity: 80%; */
 }
 
 .mobileOnly {

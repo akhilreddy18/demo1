@@ -49,8 +49,10 @@ const Jumbo = () => {
           className="jumbotron"
           style={{ backgroundColor: "#f7f7f7", borderRadius: "98px" }}
         >
-          <div className="row justify-content-center">
-            <h1 className={classes.heading}>How it works</h1>
+          <div style={{width: "100%"}}>
+            <div className="row justify-content-center">
+              <h1 className={classes.heading}>How it works</h1>
+            </div>
           </div>
           <div style={{ margin: "0 30px" }}>
             <div className="row justify-content-around">
