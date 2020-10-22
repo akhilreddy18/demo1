@@ -128,9 +128,7 @@
     margin-top: 10px;
   }
   .row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: none;
   }
   .catBg {
     display: none;

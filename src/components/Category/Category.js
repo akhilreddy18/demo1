@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./Category.module.css";
-import Logo from "../../assets/Images/Path 875.svg";
+// import Logo from "../../assets/Images/Path 875.svg";
 
 const Category = () => {
   return (
@@ -33,10 +33,10 @@ const Category = () => {
             <p className={classes.Category}>Calculator</p>
           </div>
         </div>
-        {/* <div className={classes.row}>
+        <div className={classes.row}>
           <p className={classes.Category}>Foundation</p>
           <p className={classes.Category}>Higher</p>
-        </div> */}
+        </div>
         <div className="row justify-content-center">
           <p className={classes.p}>Don't know where to start? </p>
         </div>

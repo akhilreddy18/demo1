@@ -1,6 +1,6 @@
 .mainBg {
   background: url(../../assets/Images/Path\ 163.svg) no-repeat right;
-  background-size: 45vw;
+  background-size: contain;
   position: absolute;
   left: 0;
   top: 0;
