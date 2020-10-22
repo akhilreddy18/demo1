@@ -39,13 +39,9 @@
   z-index: 2;
 }
 .lib {
-  /* width: 88px;
-  height: 88px;
-  line-height: 88px; */
   width: 6.44vw;
   height: 6.44vw;
   line-height: 6.44vw;
-  /* font-size: 36px; */
   font-size: 2.63vw;
   text-align: center;
   border: 2px solid #1c1a1d;
@@ -90,7 +86,8 @@
     margin-bottom: 20px;
   }
   .p2 {
-    font-size: 30px;
+    font-size: 28px;
+    margin-bottom: 0;
     text-align: center;
   }
   .text {
@@ -98,6 +95,7 @@
     width: 178px;
     color: #1c1a1d;
     text-align: center;
+    margin-bottom: 0;
   }
   .circle1 {
     position: relative;
@@ -133,7 +131,7 @@
     position: absolute;
     border: 1px solid #1c1a1d;
     width: 0;
-    height: 250px;
+    height: 200px;
     display: block;
     content: "";
     left: 50%;

@@ -25,10 +25,14 @@ const NewsLetter = () => {
           </div>
         </div>
       </div>
-      <div className={classes.mobileOnly}>
+      <div className={classes.mobileOnly} style={{ marginTop: "30px" }}>
         <div className="jumbotron" style={style.Jumbo}>
           <h1 className={classes.heading}>Sign up for our newsletter</h1>
-          <p className={classes.p}>
+          {/* <p className={classes.p1}>
+            Receive weekly insights on how to best prepare your child for GCSEs
+            and information on new features.
+          </p> */}
+          <p className={classes.p1}>
             Receive weekly insights on how to best prepare your child for GCSEs
             and information on new features.
           </p>

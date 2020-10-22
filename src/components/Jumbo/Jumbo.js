@@ -18,9 +18,7 @@ const Jumbo = () => {
           </div>
           <div className="row justify-content-around">
             <div className={classes.column}>
-              <ul>
-                <li className={classes.lib}>1</li>
-              </ul>
+              <li className={classes.lib}>1</li>
               <p className={classes.p2}>Measure</p>
               <p className={classes.p1} style={{ width: "24vw" }}>
                 Our test adapts its questions to your ability and needs so you
@@ -28,9 +26,7 @@ const Jumbo = () => {
               </p>
             </div>
             <div className={classes.column}>
-              <ul>
-                <li className={classes.li}>2</li>
-              </ul>
+              <li className={classes.li}>2</li>
               <p className={classes.p2}>Understand</p>
               <p className={classes.p1} style={{ width: "26.35vw" }}>
                 Learn about your performance across all learning outcomes to see
@@ -38,9 +34,7 @@ const Jumbo = () => {
               </p>
             </div>
             <div className={classes.column}>
-              <ul>
-                <li className={classes.li}>3</li>
-              </ul>
+              <li className={classes.li}>3</li>
               <p className={classes.p2}>Improve</p>
               <p className={classes.p1} style={{ width: "29.28vw" }}>
                 Study the areas we recommend to see the biggest improvement to
@@ -58,17 +52,43 @@ const Jumbo = () => {
           <div className="row justify-content-center">
             <h1 className={classes.heading}>How it works</h1>
           </div>
-          <div className="row justify-content-around">
-            <div className={classes.circle1}>1</div>
-            <div>
-              <p className={classes.p2}>Improve</p>
-              <p className={classes.text}>
-                your ability<br></br> so you can practice the topics that
-                matter.
-              </p>
+          <div style={{ margin: "0 30px" }}>
+            <div className="row justify-content-around">
+              <li className={classes.circle1} style={{ listStyle: "none" }}>
+                1
+              </li>
+              <div>
+                <p className={classes.p2}>Improve</p>
+                <p className={classes.text}>
+                  your ability<br></br> so you can practice the topics that
+                  matter.
+                </p>
+              </div>
+            </div>
+            <div className="row justify-content-around">
+              <li className={classes.circle} style={{ listStyle: "none" }}>
+                2
+              </li>
+              <div>
+                <p className={classes.p2}>Understand</p>
+                <p className={classes.text}>
+                  your performance<br></br> across all learning outcomes.
+                </p>
+              </div>
+            </div>
+            <div className="row justify-content-around">
+              <li className={classes.circle} style={{ listStyle: "none" }}>
+                3
+              </li>
+              <div>
+                <p className={classes.p2}>Measure</p>
+                <p className={classes.text}>
+                  your grades and track improvement from our dashboard.
+                </p>
+              </div>
             </div>
           </div>
-          <div className="row justify-content-around">
+          {/* <div className="row justify-content-around">
             <div className={classes.circle}>2</div>
             <div>
               <p className={classes.p2}>Understand</p>
@@ -85,7 +105,7 @@ const Jumbo = () => {
                 your grades and track improvement from our dashboard.
               </p>
             </div>
-          </div>
+          </div> */}
           {/* <div className="row justify-content-around">
             <div>
               <div className={classes.circle}>1</div>

@@ -24,7 +24,6 @@
   font-size: 1.17vw;
   outline: none;
   text-align: center;
-  opacity: 40%;
 }
 
 .heading {
@@ -57,14 +56,13 @@
   }
   .heading {
     font-size: 30px;
-    font-weight: normal;
+    font-weight: bold;
     text-align: center;
   }
-  .p {
-    font-size: 16px;
+  .p1 {
+    font-size: 18px;
     text-align: center;
-    max-width: 320px;
-    line-height: 40px;
+    line-height: 35px;
   }
   .input {
     height: 40px;

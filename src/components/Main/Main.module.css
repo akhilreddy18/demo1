@@ -141,7 +141,7 @@
   .text {
     width: 100%;
     height: 260px;
-    margin: 20px 0;
+    margin: 0;
     justify-content: space-around;
   }
   .p {
