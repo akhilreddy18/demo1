@@ -1,4 +1,8 @@
-html,
 body {
   overflow-x: hidden;
+}
+@media (max-width: 600px) {
+  html {
+    overflow-x: hidden;
+  }
 }

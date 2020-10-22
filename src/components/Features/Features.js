@@ -23,7 +23,7 @@ const Features = () => {
                     className={classes.image}
                     src={Logo2}
                     alt="Logo2"
-                    style={{ marginBottom: "10px" }}
+                    style={{ marginBottom: "20px", marginTop: "5px" }}
                   ></img>
                   <p className={classes.p1}>
                     Personalised<br></br> Recommendations
@@ -41,7 +41,7 @@ const Features = () => {
                     style={{ marginBottom: "3.3vw" }}
                   ></img>
                   <div>
-                    <p className={classes.p1}>Adaptive Test</p>
+                    <p className={classes.p1} style={{marginBottom: "35px"}}>Adaptive Test</p>
                   </div>
                   <p className={classes.p2}>
                     Our tests adopt their difficulty based on your performance
@@ -56,7 +56,7 @@ const Features = () => {
                     style={{ marginBottom: "0.73vw" }}
                   ></img>
                   <div>
-                    <p className={classes.p1}>Improvement Tracker</p>
+                    <p className={classes.p1}style={{marginBottom: "30px"}}>Improvement Tracker</p>
                   </div>
                   <p className={classes.p2}>
                     Track your performance across all learning outcomes so you

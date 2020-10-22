@@ -22,7 +22,7 @@ const Main = () => {
   return (
     <div>
       <div className={classes.mainBg}></div>
-      <div className="row justify-content-around">
+      <div className="row justify-content-between">
         <div className={classes.text}>
           <p className={classes.heading}>
             Track & improve your grades<br></br>with our personalised math tests

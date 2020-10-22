@@ -38,7 +38,7 @@ const MobileFeatures = () => {
               Adaptive<br></br> Test
             </p>
           </div>
-          <div className={classes.evenSpace}>
+          <div className={classes.evenSpace} style={{paddingLeft: "40px"}}>
             <img style={style.img} src={Logo1} alt="Logo1"></img>
             <p className={classes.p1}>
               {" "}
@@ -50,17 +50,17 @@ const MobileFeatures = () => {
           <div className={classes.evenSpace}>
             <div className="row">
               <img
-                style={{ width: "51px", height: "51px" }}
+                style={{ width: "61px", height: "61px" }}
                 src={Logo6}
                 alt="Logo6"
               ></img>
               <img
-                style={{ width: "51px", height: "50px", marginTop: "40px" }}
+                style={{ width: "61px", height: "60px", marginTop: "40px" }}
                 src={Logo7}
                 alt="Logo7"
               ></img>
               <img
-                style={{ width: "62px", height: "53px" }}
+                style={{ width: "72px", height: "63px" }}
                 src={Logo8}
                 alt="Logo8"
               ></img>
@@ -80,71 +80,12 @@ const MobileFeatures = () => {
               src={Logo4}
               alt="Logo4"
             ></img>
-            <p className={classes.p1} style={{ marginRight: "15px" }}>
+            <p className={classes.p1} style={{ marginRight: "15px", paddingTop: "12px"}}>
               {" "}
               Parental<br></br>Reports
             </p>
           </div>
         </div>
-        {/* <div className="col">
-          <div className="row justify-content-around">
-            <img style={style.img} src={Logo2} alt="Logo2"></img>
-            <img style={style.img} src={Logo5} alt="Logo5"></img>
-          </div>
-          <div className="row justify-content-around">
-            <p className={classes.p1}>
-              Personalised<br></br> Recommendations
-            </p>
-            <p className={classes.p1}>
-              {" "}
-              Exam-Style<br></br> questions
-            </p>
-          </div>
-          <div className="row justify-content-around">
-            <img style={style.img} src={Logo3} alt="Logo3"></img>
-            <img style={style.img} src={Logo1} alt="Logo1"></img>
-          </div>
-          <div className="row justify-content-around">
-            <p className={classes.p1}>
-              Adaptive<br></br> Test
-            </p>
-            <p className={classes.p1}>
-              Improvement<br></br> Tracker
-            </p>
-          </div>
-          <div className="row justify-content-around">
-            <div className="row">
-              <img
-                style={{ width: "51px", height: "51px" }}
-                src={Logo6}
-                alt="Logo6"
-              ></img>
-              <img
-                style={{ width: "51px", height: "50px", marginTop: "40px" }}
-                src={Logo7}
-                alt="Logo7"
-              ></img>
-              <img
-                style={{ width: "62px", height: "53px" }}
-                src={Logo8}
-                alt="Logo8"
-              ></img>
-            </div>
-            <img
-              style={{ width: "80px", height: "70px", marginRight: "15px" }}
-              src={Logo4}
-              alt="Logo4"
-            ></img>
-          </div>
-          <div className="row justify-content-around">
-            <p className={classes.p1}>
-              Question<br></br> variety
-            </p>
-            <p className={classes.p1}>
-              Parental<br></br> Reports
-            </p>
-          </div>
-        </div> */}
       </div>
     </div>
   );
@@ -157,8 +98,8 @@ const style = {
     borderRadius: "98px",
   },
   img: {
-    width: "80px",
-    height: "70px",
+    width: "100px",
+    height: "90px",
   },
 };
 export default MobileFeatures;
