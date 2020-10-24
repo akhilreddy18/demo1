@@ -5,12 +5,12 @@ import SettingsIcon from "@material-ui/icons/Settings";
 import EqualizerIcon from "@material-ui/icons/Equalizer";
 import HomeOutlinedIcon from "@material-ui/icons/HomeOutlined";
 // core components/views for Admin layout
-import DashboardPage from "./views/Dashboard/Dashboard.js";
-import UserProfile from "./views/UserProfile/UserProfile.js";
-import TableList from "./views/TableList/TableList.js";
-import Typography from "./views/Typography/Typography.js";
-import Icons from "./views/Icons/Icons.js";
-import NotificationsPage from "./views/Notifications/Notifications.js";
+import DashboardPage from "./Dashboard/views/Dashboard/Dashboard.js";
+import UserProfile from "./Dashboard/views/UserProfile/UserProfile.js";
+import TableList from "./Dashboard/views/TableList/TableList.js";
+import Typography from "./Dashboard/views/Typography/Typography.js";
+import Icons from "./Dashboard/views/Icons/Icons.js";
+import NotificationsPage from "./Dashboard/views/Notifications/Notifications.js";
 
 const dashboardRoutes = [
   {
