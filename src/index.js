@@ -7,6 +7,7 @@ import "./index.css";
 // core components
 import Admin from "./Dashboard/Admin.js";
 import LandingPage from "./LandingPage/LandingPage.js";
+import AboutUs from "./LandingPage/components/Navbar/NavigationItems/AboutUs";
 
 const hist = createBrowserHistory();
 
@@ -15,7 +16,8 @@ ReactDOM.render(
     <Switch>
       <Route exact path="/" component={LandingPage} />
       <Route path="/admin" component={Admin} />
-      {/* <Redirect from="/" to="/admin/dashboard" /> */}
+      <Route path="/aboutus" component={AboutUs} />
+      <Redirect to="/"></Redirect>
     </Switch>
   </Router>,
   document.getElementById("root")

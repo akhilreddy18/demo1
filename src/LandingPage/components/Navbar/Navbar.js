@@ -7,17 +7,15 @@ const navbar = () => {
     <>
       <Navbar className={classes.navbar} expand="lg">
         <Navbar.Brand href="#home" style={style.brand}>
-          <div style={{paddingLeft: "20px"}}>
-            Edicat
-          </div>
+          <div style={{ paddingLeft: "20px" }}>Edicat</div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link href="#home" style={style.links}>
+            <Nav.Link href="/" style={style.links}>
               Home
             </Nav.Link>
-            <Nav.Link href="#link" style={style.links}>
+            <Nav.Link href="/aboutus" style={style.links}>
               About Us
             </Nav.Link>
           </Nav>
