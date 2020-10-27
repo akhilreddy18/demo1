@@ -5,8 +5,8 @@ import { Router, Route, Switch, Redirect } from "react-router-dom";
 import "./index.css";
 
 // core components
-import Admin from "./layouts/Admin.js";
-import LandingPage from "./layouts/LandingPage.js";
+import Admin from "./Dashboard/Admin.js";
+import LandingPage from "./LandingPage/LandingPage.js";
 
 const hist = createBrowserHistory();
 
