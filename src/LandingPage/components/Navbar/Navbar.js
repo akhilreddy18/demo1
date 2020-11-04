@@ -1,13 +1,24 @@
 import React from "react";
-import { Nav, Navbar, Form, Button, Modal, Col, Row } from "react-bootstrap";
 import classes from "./Navbar.module.css";
+import { Nav, Navbar, Form, Button } from "react-bootstrap";
+
 import { useState } from "react";
+import Modaljs from "../Modal/Modal";
 
 const NavbarComponent = () => {
-
   const [show, setShow] = useState(false);
+  const [auth, setAuth] = useState(false);
 
-  const handleClose = () => setShow(false);
+  const handleAuth = () => {
+    setAuth(true);
+
+    setShow(true);
+  };
+  const handleClose = () => {
+    setAuth(false);
+
+    setShow(false);
+  };
   const handleShow = () => setShow(true);
   return (
     <>
@@ -26,50 +37,19 @@ const NavbarComponent = () => {
             </Nav.Link>
           </Nav>
           <Form inline>
-            <Button onClick={handleShow} className={classes.loginButton}>LOG IN</Button>
-            <Button className={classes.tryButton}>TRY IT FOR FREE</Button>
+            <Button onClick={handleAuth} className={classes.loginButton}>
+              LOG IN
+            </Button>
+            <Button onClick={handleShow} className={classes.tryButton}>
+              TRY IT FOR FREE
+            </Button>
           </Form>
         </Navbar.Collapse>
       </Navbar>
-      <Modal
-        show={show}
-        onHide={handleClose}
-        backdrop="static"
-        keyboard={false}
-        size="lg"
-      >
-        <Modal.Header closeButton>
-          <Modal.Title>Login</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <Row className="justify-content-around">
-            <div style={{border: "2px solid"}}>
-            <Col>
-            I will not close if you click outside me. 
-            </Col>
-            </div>
-            <div style={{border: "2px solid"}}>
-            <Col>
-            Don't even try to press
-          escape key.
-            </Col>
-            </div>
-          </Row>
-        </Modal.Body>
-        {/* <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary">Understood</Button>
-        </Modal.Footer> */}
-      </Modal>
+      <Modaljs auth={auth} show={show} handleClose={handleClose}></Modaljs>
     </>
   );
 };
-
-function handleLogin() {
-  alert("clicked");
-}
 
 const style = {
   brand: {

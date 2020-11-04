@@ -1,0 +1,58 @@
+.combineButton {
+  width: 10vw;
+  height: 4.5vw;
+  font-size: 2vw;
+  font-weight: bold;
+  color: #0f0e0e;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.combineButton:active {
+  background-color: #3d2ef5;
+  color: #fff;
+}
+
+.signUpButton {
+  background-color: #fff;
+  margin: 1vw 0;
+  height: 4vw;
+  box-shadow: 2px 2px 8px #ccc;
+  border: none;
+  font-size: 1.1vw;
+  font-weight: 550;
+}
+
+.signUpButton:active {
+  transform: scale(0.98);
+}
+
+.title {
+  margin-left: 33vw;
+  color: #fff;
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+.header {
+  background-color: #186aa5;
+}
+
+.input {
+  width: 300px;
+  height: 3vw;
+  font-size: 1.2vw;
+  border: 1px solid #e2e2e6;
+}
+
+.submitForm {
+  width: 8vw;
+  height: 2.5vw;
+  font-size: 1.1vw;
+  background-color: #3d2ef5;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 0;
+  border: none;
+}
