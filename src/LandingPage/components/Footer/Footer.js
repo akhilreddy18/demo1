@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./Footer.module.css";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import FacebookIcon from "@material-ui/icons/Facebook";
+import ContactUs from "../ContactUs/ContactUs";
+import Community from "../Communtiy/Community";
 
 const Footer = () => {
+  const [contact, setContact] = useState(false);
+  const [community, setCommunity] = useState(false);
+
+  const handleContact = () => setContact(true);
+  const handleCommunity = () => setCommunity(true);
+  const handleClose = () => {
+    setContact(false);
+    setCommunity(false);
+  };
+
   return (
     <div>
       <div className={classes.DesktopOnly}>
@@ -30,7 +42,9 @@ const Footer = () => {
               </a>
             </div>
             <div className={classes.column}>
-              <p className={classes.anchor}>Community</p>
+              <p className={classes.anchor} onClick={handleCommunity}>
+                Community
+              </p>
               <a className={classes.an} href="/home">
                 Parents
               </a>
@@ -57,7 +71,9 @@ const Footer = () => {
               </a>
             </div>
             <div className={classes.column}>
-              <p className={classes.anchor}>Contact Us</p>
+              <p className={classes.anchor} onClick={handleContact}>
+                Contact Us
+              </p>
               <a className={classes.an} href="/home">
                 support@edicat.co.uk
               </a>
@@ -89,6 +105,8 @@ const Footer = () => {
         </div>
         {/* <div className={classes.Footer1}></div> */}
       </div>
+      <ContactUs show={contact} handleClose={handleClose}></ContactUs>
+      <Community show={community} handleClose={handleClose}></Community>
       <div className={classes.mobileOnly}>
         <div className={classes.row}>
           <p

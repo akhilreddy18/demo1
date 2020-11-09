@@ -22,7 +22,7 @@ const NavbarComponent = () => {
   const handleShow = () => setShow(true);
   return (
     <>
-      <Navbar className={classes.navbar} expand="lg">
+      <Navbar className={classes.navbar} expand="lg" fixed="top">
         <Navbar.Brand href="#home" style={style.brand}>
           <div style={{ paddingLeft: "20px" }}>Edicat</div>
         </Navbar.Brand>

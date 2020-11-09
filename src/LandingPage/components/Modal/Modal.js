@@ -12,6 +12,9 @@ import {
 } from "react-bootstrap";
 import Logo from "../../../assets/Images/Group 2136.png";
 import Logo1 from "../../../assets/Images/Group 2164.png";
+import Mail from "../../../assets/Images/Icon Mail.png";
+import Facebook from "../../../assets/Images/facebook-icon.png";
+import Google from "../../../assets/Images/google-icon.png";
 
 const Modaljs = (props) => {
   const [firstLayer, setFirstLayer] = useState(true);
@@ -37,7 +40,7 @@ const Modaljs = (props) => {
         }}
         backdrop="static"
         keyboard={false}
-        size="xl"
+        size="lg"
       >
         <Modal.Header className={classes.header} closeButton>
           <Modal.Title className={classes.title}>
@@ -46,7 +49,7 @@ const Modaljs = (props) => {
         </Modal.Header>
         <Modal.Body>
           <Row className="justify-content-around">
-            <div style={{ border: "2px solid" }}>
+            <div style={{ border: "2px solid", paddingTop: "2vw" }}>
               <Col>
                 <p
                   style={{
@@ -88,9 +91,27 @@ const Modaljs = (props) => {
                 </div>
                 <div style={{ display: "flex", flexDirection: "column" }}>
                   <button className={classes.signUpButton}>
-                    {props.auth ? "Log in with Google" : "Sign Up with Google"}
+                    <img
+                      style={{
+                        width: "2.5vw",
+                        height: "2.5vw",
+                        float: "left",
+                      }}
+                      src={Google}
+                      alt="Google"
+                    ></img>
+                    <span style={{ verticalAlign: "middle" }}>
+                      {props.auth
+                        ? "Log in with Google"
+                        : "Sign Up with Google"}
+                    </span>
                   </button>
                   <button className={classes.signUpButton}>
+                    <img
+                      style={{ width: "1.3vw", height: "2.5vw", float: "left" }}
+                      src={Facebook}
+                      alt="Facebook"
+                    ></img>
                     {props.auth
                       ? "Log in with Facebook"
                       : "Sign Up with Facebook"}
@@ -100,7 +121,12 @@ const Modaljs = (props) => {
                     className={classes.signUpButton}
                     onClick={handlesecondLayer}
                   >
-                    Sign up with Email
+                    <img
+                      style={{ width: "2.5vw", height: "2vw", float: "left" }}
+                      src={Mail}
+                      alt="Mail"
+                    ></img>
+                    Sign Up with Email
                   </button>
                 </div>
                 <p
@@ -264,6 +290,10 @@ const style = {
     fontWeight: "bold",
     fontSize: "0.8vw",
     marginBottom: "0",
+  },
+  icon: {
+    width: "2vw",
+    height: "2vw",
   },
 };
 

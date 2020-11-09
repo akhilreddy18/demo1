@@ -35,6 +35,7 @@ a:hover {
   text-decoration: none;
   font-weight: 550;
   margin-bottom: 0;
+  cursor: pointer;
 }
 .column {
   display: flex;
