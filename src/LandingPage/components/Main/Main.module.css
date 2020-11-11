@@ -31,16 +31,12 @@
 }
 
 .heading {
-  /* width: 780px;
-  font-size: 48px; */
   width: 55vw;
-  /* font-size: 3.5vw; */
   font-size: 3.29vw;
   color: #186aa5;
   font-weight: bold;
   text-align: center;
   margin-bottom: 0;
-  /* line-height: 4.5vw; */
   line-height: 3.5vw;
 }
 

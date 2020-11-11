@@ -16,9 +16,18 @@ import Mail from "../../../assets/Images/Icon Mail.png";
 import Facebook from "../../../assets/Images/facebook-icon.png";
 import Google from "../../../assets/Images/google-icon.png";
 
+const { Auth } = require("aws-amplify");
+
 const Modaljs = (props) => {
   const [firstLayer, setFirstLayer] = useState(true);
   const [secondLayer, setSecondLayer] = useState(false);
+  const [user, setUser] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
+  });
 
   const handlesecondLayer = () => {
     setFirstLayer(false);
@@ -28,6 +37,32 @@ const Modaljs = (props) => {
   const handleResetLayer = () => {
     setFirstLayer(true);
     setSecondLayer(false);
+  };
+
+  const handleInput = (event) => {
+    console.log(event.target.name, event.target.value);
+    setUser({
+      [event.target.name]: event.target.value,
+    });
+  };
+
+  const signUp = async function handleSignup(event) {
+    event.preventDefault();
+    try {
+      const { user } = await Auth.signUp({
+        username: user.email,
+        password: user.password,
+        attributes: {
+          email: user.email, // optional
+          //phone_number: 1234314,   // optional - E.164 number convention
+          // other custom attributes
+        },
+      });
+      console.log("##########");
+      console.log(user);
+    } catch (error) {
+      console.log("error signing up:", error);
+    }
   };
 
   return (
@@ -210,43 +245,68 @@ const Modaljs = (props) => {
                       }}
                     >
                       <div>
-                        <label style={style.label}>First name*</label>
+                        <label htmlFor="firstName" style={style.label}>
+                          First name*
+                        </label>
                         <input
                           className={classes.input}
                           type="text"
+                          name="firstName"
+                          value={user.firstName || ""}
                           placeholder="First name"
+                          onChange={handleInput}
                         ></input>
                       </div>
                       <div>
-                        <label style={style.label}>Last name*</label>
+                        <label htmlFor="lastName" style={style.label}>
+                          Last name*
+                        </label>
                         <input
                           className={classes.input}
                           type="text"
+                          name="lastName"
+                          value={user.lastName}
                           placeholder="Last name"
+                          onChange={handleInput}
                         ></input>
                       </div>
                       <div>
-                        <label style={style.label}>Email*</label>
+                        <label htmlFor="email" style={style.label}>
+                          Email*
+                        </label>
                         <input
                           className={classes.input}
                           type="text"
+                          name="email"
+                          value={user.email}
                           placeholder="Email"
+                          onChange={handleInput}
                         ></input>
                       </div>
                       <div>
-                        <label style={style.label}>Password*</label>
+                        <label htmlFor="password" style={style.label}>
+                          Password*
+                        </label>
                         <input
                           className={classes.input}
                           type="password"
+                          name="password"
+                          value={user.password}
                           placeholder="Create Password"
+                          onChange={handleInput}
                         ></input>
                       </div>
                       <div>
-                        <label style={style.label}>Re-enter Password*</label>
+                        <label htmlFor="confirmPassword" style={style.label}>
+                          Re-enter Password*
+                        </label>
                         <input
                           className={classes.input}
                           type="password"
+                          name="confirmPassword"
+                          value={user.confirmPassword}
                           placeholder="Confirm Password"
+                          onChange={handleInput}
                         ></input>
                       </div>
                       <div
@@ -271,6 +331,7 @@ const Modaljs = (props) => {
                         type="submit"
                         value="Sign Up"
                         className={classes.submitForm}
+                        onClick={signUp}
                       ></input>
                     </div>
                   </form>

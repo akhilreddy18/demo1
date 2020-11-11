@@ -9,7 +9,34 @@ import Admin from "./Dashboard/Admin.js";
 import LandingPage from "./LandingPage/LandingPage.js";
 import AboutUs from "./LandingPage/components/Navbar/NavigationItems/AboutUs";
 
+const { Amplify } = require("aws-amplify");
+const config = require("./config");
+
 const hist = createBrowserHistory();
+Amplify.configure({
+  Auth: {
+    mandatorySignIn: true,
+    region: config.cognito.REGION,
+    userPoolId: config.cognito.USER_POOL_ID,
+    //userPoolWebClientSecret: config.cognito.APP_CLIENT_SECRET,
+    identityPoolId: config.cognito.IDENTITY_POOL_ID,
+    userPoolWebClientId: config.cognito.APP_CLIENT_ID,
+  },
+  /* Storage: {
+      region: config.s3.REGION,
+      bucket: config.s3.BUCKET,
+      identityPoolId: config.cognito.IDENTITY_POOL_ID
+    },
+    API: {
+      endpoints: [
+        {
+          name: "notes",
+          endpoint: config.apiGateway.URL,
+          region: config.apiGateway.REGION
+        },
+      ]
+    } */
+});
 
 ReactDOM.render(
   <Router history={hist}>
