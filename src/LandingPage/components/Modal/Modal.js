@@ -1,5 +1,5 @@
 import classes from "./Modal.module.css";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Nav,
   Navbar,
@@ -15,6 +15,9 @@ import Logo1 from "../../../assets/Images/Group 2164.png";
 import Mail from "../../../assets/Images/Icon Mail.png";
 import Facebook from "../../../assets/Images/facebook-icon.png";
 import Google from "../../../assets/Images/google-icon.png";
+import { Redirect } from "react-router-dom";
+import { Switch } from "@material-ui/core";
+import { useHistory } from "react-router-dom";
 
 const { Auth } = require("aws-amplify");
 
@@ -40,16 +43,31 @@ const Modaljs = (props) => {
   };
 
   const handleInput = (event) => {
-    console.log(event.target.name, event.target.value);
     setUser({
+      ...user,
       [event.target.name]: event.target.value,
     });
   };
 
-  const signUp = async function handleSignup(event) {
-    event.preventDefault();
+  let history = useHistory();
+
+  const redirect = () => {
+    history.push("/admin");
+  };
+  const signIn = async function handleSignIn(e) {
+    e.preventDefault();
     try {
-      const { user } = await Auth.signUp({
+      const amplifyUser = await Auth.signIn(user.email, user.password);
+      redirect();
+    } catch (error) {
+      console.log("error signing in", error);
+    }
+  };
+
+  const signUp = async function handleSignup(event) {
+    // event.preventDefault();
+    try {
+      const amplifyUser = await Auth.signUp({
         username: user.email,
         password: user.password,
         attributes: {
@@ -57,9 +75,10 @@ const Modaljs = (props) => {
           //phone_number: 1234314,   // optional - E.164 number convention
           // other custom attributes
         },
-      });
+      }).user;
+      redirect();
       console.log("##########");
-      console.log(user);
+      console.log(amplifyUser);
     } catch (error) {
       console.log("error signing up:", error);
     }
@@ -189,19 +208,29 @@ const Modaljs = (props) => {
                       }}
                     >
                       <div style={{ margin: "0.5vw 0" }}>
-                        <label style={style.label}>Email*</label>
+                        <label htmlFor="email" style={style.label}>
+                          Email*
+                        </label>
                         <input
                           className={classes.input}
                           type="text"
+                          name="email"
+                          value={user.email}
                           placeholder="Email"
+                          onChange={handleInput}
                         ></input>
                       </div>
                       <div style={{ margin: "0.5vw 0" }}>
-                        <label style={style.label}>Password*</label>
+                        <label htmlFor="password" style={style.label}>
+                          Password*
+                        </label>
                         <input
                           className={classes.input}
+                          name="password"
+                          value={user.password}
                           type="password"
                           placeholder="Password"
+                          onChange={handleInput}
                         ></input>
                       </div>
                       <input
@@ -209,6 +238,7 @@ const Modaljs = (props) => {
                         type="submit"
                         value="Log in"
                         className={classes.submitForm}
+                        onClick={signIn}
                       ></input>
                     </div>
                   </form>
@@ -252,7 +282,7 @@ const Modaljs = (props) => {
                           className={classes.input}
                           type="text"
                           name="firstName"
-                          value={user.firstName || ""}
+                          value={user.firstName}
                           placeholder="First name"
                           onChange={handleInput}
                         ></input>
