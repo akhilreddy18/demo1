@@ -21,6 +21,13 @@ Amplify.configure({
     //userPoolWebClientSecret: config.cognito.APP_CLIENT_SECRET,
     identityPoolId: config.cognito.IDENTITY_POOL_ID,
     userPoolWebClientId: config.cognito.APP_CLIENT_ID,
+    oauth: {
+      domain: 'https://edicat.auth.eu-west-2.amazoncognito.com',
+      scope: ['phone', 'email', 'profile', 'openid', 'aws.cognito.signin.user.admin'],
+      redirectSignIn: 'https://www.edicat.co.uk?signed=true/',
+      redirectSignOut: 'https://www.edicat.co.uk/',
+      responseType: 'code' // or 'token', note that REFRESH token will only be generated when the responseType is code
+    }
   },
   /* Storage: {
       region: config.s3.REGION,

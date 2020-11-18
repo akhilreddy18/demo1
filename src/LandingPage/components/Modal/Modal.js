@@ -84,6 +84,27 @@ const Modaljs = (props) => {
     }
   };
 
+  async function handleGoogleSignIn(event) {
+    try {
+      console.log("clicked");
+      const amplifyUser = await Auth.federatedSignIn({provider: 'Google'});
+      /* const amplifyUser = await Auth.signUp({
+        username: user.email,
+        password: user.password,
+        attributes: {
+          email: user.email, // optional
+          //phone_number: 1234314,   // optional - E.164 number convention
+          // other custom attributes
+        },
+      }).user;
+      redirect(); */
+      console.log("##########");
+      console.log(amplifyUser);
+    } catch (error) {
+      console.log("error signing up:", error);
+    }
+  }
+
   return (
     <div>
       <Modal
@@ -144,7 +165,7 @@ const Modaljs = (props) => {
                   <button className={classes.combineButton}>Parent</button>
                 </div>
                 <div style={{ display: "flex", flexDirection: "column" }}>
-                  <button className={classes.signUpButton}>
+                  <button className={classes.signUpButton} onClick={handleGoogleSignIn}>
                     <img
                       style={{
                         width: "2.5vw",
