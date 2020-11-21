@@ -27,11 +27,35 @@
   position: relative;
 }
 
-.li:first-child::before {
+/* .li:first-child::before {
   content: "";
   position: absolute;
   top: 0.75vw;
   left: -20vw;
+  width: 100vw;
+  height: 0.1vw;
+  background: #707070;
+  z-index: -1;
+} */
+
+.lineline {
+  width: 1.5vw;
+  height: 1.5vw;
+  text-align: center;
+  line-height: 1.5vw;
+  border-radius: 0.75vw;
+  background: #186aa5;
+  /* margin-right: 3.66vw; */
+  display: inline-block;
+  color: white;
+  position: relative;
+}
+
+.lineline:first-child::after {
+  content: "";
+  position: absolute;
+  top: 0.75vw;
+  left: -84.5vw;
   width: 100vw;
   height: 0.1vw;
   background: #707070;
