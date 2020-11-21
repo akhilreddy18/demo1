@@ -19,12 +19,18 @@ import { Redirect } from "react-router-dom";
 import { Switch } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
 
-const { Auth } = require("aws-amplify");
+const { Auth, Hub } = require("aws-amplify");
 
 const Modaljs = (props) => {
+
+  Hub.listen('auth', (data) => {
+    const { payload } = data;
+    this.onAuthEvent(payload);
+    console.log('A new auth event has happened: ', data.payload.data.username + ' has ' + data.payload.event);
+  })
   const [firstLayer, setFirstLayer] = useState(true);
   const [secondLayer, setSecondLayer] = useState(false);
-  const [user, setUser] = useState({
+  const [user, setUser] = useState({  
     firstName: "",
     lastName: "",
     email: "",
@@ -84,10 +90,15 @@ const Modaljs = (props) => {
     }
   };
 
+  async function checkUser() {
+    const user = await Auth.currentAuthenticatedUser();
+    console.log(user);
+  }
+
   async function handleGoogleSignIn(event) {
     try {
       console.log("clicked");
-      const amplifyUser = await Auth.federatedSignIn({provider: 'Google'});
+      const amplifyUser = await Auth.federatedSignIn({ provider: 'Google' });
       /* const amplifyUser = await Auth.signUp({
         username: user.email,
         password: user.password,
@@ -98,8 +109,10 @@ const Modaljs = (props) => {
         },
       }).user;
       redirect(); */
+      //checkUser();
       console.log("##########");
       console.log(amplifyUser);
+      //redirect();
     } catch (error) {
       console.log("error signing up:", error);
     }
