@@ -8,10 +8,10 @@ const Reviews = () => {
     <div style={{ position: "relative", padding: "3.5vw 0" }}>
       <div className={classes.revBg}></div>
       <div className={classes.content}>
-        <div className="row justify-content-center">
+        <div className={classes.rowCenter}>
           <h1 className={classes.heading}>Parents And Students Love Us</h1>
         </div>
-        <div className="row justify-content-center">
+        <div className={classes.rowCenter}>
           <p className={classes.p}>
             We're changing the lives of thousands of students across the UK.
           </p>

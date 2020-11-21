@@ -1,12 +1,24 @@
 .mainBg {
   background: url(../../../assets/Images/Path\ 163.svg) no-repeat right;
-  background-size: contain;
+  background-size: 50%;
   position: absolute;
   left: 0;
   top: 0;
-  right: -1vw;
+  right: -0vw;
   bottom: -16vw;
   z-index: -1;
+}
+
+.rowBetween {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.rowCenter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /* .background {

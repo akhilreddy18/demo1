@@ -12,7 +12,7 @@ const Category = () => {
     >
       <div className={classes.catBg}></div>
       <div className={classes.content}>
-        <div className="row justify-content-center">
+        <div className={classes.rowCenter}>
           <h1 className={classes.heading}>Practice questions by...</h1>
         </div>
 
@@ -31,11 +31,11 @@ const Category = () => {
             <p className={classes.Category}>Tier</p>
           </div>
           <div className={classes.line}>
-            <li className={classes.lid}></li>
+            <li className={classes.li}></li>
             <p className={classes.Category}>Grade</p>
           </div>
           <div className={classes.line}>
-            <li className={classes.lid}></li>
+            <li className={classes.li}></li>
             <p className={classes.Category}>Topic</p>
           </div>
           <div className={classes.line}>
@@ -47,10 +47,10 @@ const Category = () => {
           <p className={classes.Category}>Foundation</p>
           <p className={classes.Category}>Higher</p>
         </div>
-        <div className="row justify-content-center">
+        <div className={classes.rowCenter}>
           <p className={classes.p}>Don't know where to start? </p>
         </div>
-        <div className="row justify-content-center">
+        <div className={classes.rowCenter}>
           <p className={classes.p1}>
             <strong>
               <a className={classes.p1} href="#start">

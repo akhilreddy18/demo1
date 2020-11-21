@@ -21,7 +21,13 @@ const Footer = () => {
     <div>
       <div className={classes.DesktopOnly}>
         <div className={classes.Footer}>
-          <div className="row justify-content-around">
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-around",
+            }}
+          >
             <p className={classes.p}>
               Our mission is to provide high-quality, personalised education to
               every child.

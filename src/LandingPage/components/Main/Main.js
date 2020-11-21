@@ -22,17 +22,19 @@ const Main = () => {
   return (
     <div>
       <div className={classes.mainBg}></div>
-      <div className="row justify-content-between">
+      <div className={classes.rowBetween}>
         <div className={classes.text}>
           <div className="d-none d-lg-block">
             <p className={classes.heading}>
-              Track & improve your grades<br></br>with our personalised math tests
-          </p>
+              Track & improve your grades<br></br>with our personalised math
+              tests
+            </p>
           </div>
           <div className="d-lg-none">
             <p className={classes.heading}>
-              Track & improve your <br></br>grades with our <br></br> personalised math tests
-          </p>
+              Track & improve your <br></br>grades with our <br></br>{" "}
+              personalised math tests
+            </p>
           </div>
           <p className={classes.description}>
             Our assessment platform learns your ability and generates questions
@@ -51,7 +53,7 @@ const Main = () => {
       <div style={{ position: "relative", padding: "3.5vw 0" }}>
         <div className={classes.bottomBg}></div>
         <div className={classes.instContent}>
-          <div className="row justify-content-center">
+          <div className={classes.rowCenter}>
             <p className={classes.p}>
               Our platform is supported by top institutions
             </p>
@@ -88,7 +90,7 @@ const Main = () => {
           alt="next"
         ></img>
       </div>
-      <div className="row justify-content-center">
+      <div className={classes.rowCenter}>
         <p className={classes.p1}>
           Our Mission it to provide high-quality personalized education to every
           child.
