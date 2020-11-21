@@ -24,12 +24,12 @@ const Main = () => {
       <div className={classes.mainBg}></div>
       <div className="row justify-content-between">
         <div className={classes.text}>
-          <div class="d-none d-lg-block">
+          <div className="d-none d-lg-block">
             <p className={classes.heading}>
               Track & improve your grades<br></br>with our personalised math tests
           </p>
           </div>
-          <div class="d-lg-none">
+          <div className="d-lg-none">
             <p className={classes.heading}>
               Track & improve your <br></br>grades with our <br></br> personalised math tests
           </p>

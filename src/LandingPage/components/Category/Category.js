@@ -15,17 +15,27 @@ const Category = () => {
         <div className="row justify-content-center">
           <h1 className={classes.heading}>Practice questions by...</h1>
         </div>
+
+        {/*  <div
+          style={{
+            borderRadius: Math.round(window.innerWidth + window.innerHeight) / 2,
+            width: window.innerWidth * 0.01,
+            height: window.innerWidth * 0.01,
+            background: "green"
+          }}>
+        </div> */}
+
         <div className={classes.containCat}>
           <div className={classes.line}>
             <li className={classes.li}></li>
             <p className={classes.Category}>Tier</p>
           </div>
           <div className={classes.line}>
-            <li className={classes.li}></li>
+            <li className={classes.lid}></li>
             <p className={classes.Category}>Grade</p>
           </div>
           <div className={classes.line}>
-            <li className={classes.li}></li>
+            <li className={classes.lid}></li>
             <p className={classes.Category}>Topic</p>
           </div>
           <div className={classes.line}>
