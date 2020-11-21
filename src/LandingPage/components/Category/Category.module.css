@@ -27,6 +27,27 @@
   position: relative;
 }
 
+.lid {
+  width: 1.5vw;
+  height: 1.5vw;
+  text-align: center;
+  line-height: 1.5vw;
+  border-radius: 0.75vw;
+  background: #186aa5;
+  display: inline-block;
+  color: white;
+  position: relative;
+}
+
+.lid:first-child::before {
+  top: 0.75vw;
+  left: 0vw;
+  width: 1px;
+  height: 0.1vw;
+  background: #707070;
+  z-index: -1;
+}
+
 .li:first-child::before {
   content: "";
   position: absolute;

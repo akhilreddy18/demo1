@@ -31,15 +31,15 @@ const Category = () => {
             <p className={classes.Category}>Tier</p>
           </div>
           <div className={classes.line}>
-            <li className={classes.li}></li>
+            <li className={classes.lid}></li>
             <p className={classes.Category}>Grade</p>
           </div>
           <div className={classes.line}>
-            <li className={classes.li}></li>
+            <li className={classes.lid}></li>
             <p className={classes.Category}>Topic</p>
           </div>
           <div className={classes.line}>
-            <li style={{}} className={classes.li}></li>
+            <li className={classes.lid}></li>
             <p className={classes.Category}>Calculator</p>
           </div>
         </div>
