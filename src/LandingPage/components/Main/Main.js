@@ -6,7 +6,7 @@ import classes from "./Main.module.css";
 import Reviews from "../Reviews/Reviews";
 import NewsLetter from "../NewsLetter/NewsLetter";
 import MobileFeatures from "../Features/MobileFeatures";
-import Logo from "../../../assets/Images/Group 376.svg";
+import Logo from "../../../assets/Images/group-bged.png";
 import Logo1 from "../../../assets/Images/Image 1.png";
 import Logo2 from "../../../assets/Images/Image 2.png";
 import Logo3 from "../../../assets/Images/Image 3.png";
@@ -21,7 +21,7 @@ import { ClassSharp } from "@material-ui/icons";
 const Main = () => {
   return (
     <div>
-      <div className={classes.mainBg}></div>
+      {/* <div className={classes.mainBg}></div> */}
       <div className={classes.rowBetween}>
         <div className={classes.text}>
           <div className="d-none d-lg-block">

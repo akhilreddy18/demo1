@@ -4,7 +4,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  right: -0vw;
+  right: 0vw;
   bottom: -16vw;
   z-index: -1;
 }
@@ -81,6 +81,12 @@
 
 .img {
   width: 40vw;
+  /* position: absolute;
+  left: 60vw;
+  top: 5.5vw;
+  right: 0vw;
+  bottom: 0;
+  z-index: -1; */
 }
 
 .tryButton {

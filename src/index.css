@@ -1,6 +1,7 @@
 body {
   overflow-x: hidden;
-  padding-top: 50px; 
+  padding-top: 50px;
+  width: 100%;
 }
 @media (max-width: 600px) {
   html {
