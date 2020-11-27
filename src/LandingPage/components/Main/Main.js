@@ -59,9 +59,9 @@ const Main = () => {
             </p>
           </div>
           <div className={classes.institutions}>
-            <a href="#Logo">
+            {/* <a href="#Logo">
               <img style={style.image} src={Logo3} alt="Logo3"></img>
-            </a>
+            </a> */}
             <a href="#Logo">
               <img style={style.image} src={Logo2} alt="Logo2"></img>
             </a>

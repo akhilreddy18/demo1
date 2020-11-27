@@ -1,36 +1,29 @@
 import classes from "./Modal.module.css";
 import React, { useEffect, useState } from "react";
-import {
-  Nav,
-  Navbar,
-  Form,
-  Button,
-  Modal,
-  Col,
-  Row,
-  ButtonGroup,
-} from "react-bootstrap";
+import { Modal, Col, Row } from "react-bootstrap";
 import Logo from "../../../assets/Images/Group 2136.png";
 import Logo1 from "../../../assets/Images/Group 2164.png";
 import Mail from "../../../assets/Images/Icon Mail.png";
 import Facebook from "../../../assets/Images/facebook-icon.png";
 import Google from "../../../assets/Images/google-icon.png";
-import { Redirect } from "react-router-dom";
-import { Switch } from "@material-ui/core";
+// import { Redirect } from "react-router-dom";
+// import { Switch } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
 
 const { Auth, Hub } = require("aws-amplify");
 
 const Modaljs = (props) => {
-
-  Hub.listen('auth', (data) => {
+  Hub.listen("auth", (data) => {
     const { payload } = data;
     this.onAuthEvent(payload);
-    console.log('A new auth event has happened: ', data.payload.data.username + ' has ' + data.payload.event);
-  })
+    console.log(
+      "A new auth event has happened: ",
+      data.payload.data.username + " has " + data.payload.event
+    );
+  });
   const [firstLayer, setFirstLayer] = useState(true);
   const [secondLayer, setSecondLayer] = useState(false);
-  const [user, setUser] = useState({  
+  const [user, setUser] = useState({
     firstName: "",
     lastName: "",
     email: "",
@@ -98,7 +91,7 @@ const Modaljs = (props) => {
   async function handleGoogleSignIn(event) {
     try {
       console.log("clicked");
-      const amplifyUser = await Auth.federatedSignIn({ provider: 'Google' });
+      const amplifyUser = await Auth.federatedSignIn({ provider: "Google" });
       /* const amplifyUser = await Auth.signUp({
         username: user.email,
         password: user.password,
@@ -115,6 +108,17 @@ const Modaljs = (props) => {
       //redirect();
     } catch (error) {
       console.log("error signing up:", error);
+    }
+  }
+
+  async function handleFacebookSigIn(event) {
+    try {
+      console.log("clicked");
+      const amplifyUser = await Auth.federatedSignIn({ provider: "Facebook" });
+      console.log("######");
+      console.log(amplifyUser);
+    } catch (error) {
+      console.log(error);
     }
   }
 
@@ -178,7 +182,10 @@ const Modaljs = (props) => {
                   <button className={classes.combineButton}>Parent</button>
                 </div>
                 <div style={{ display: "flex", flexDirection: "column" }}>
-                  <button className={classes.signUpButton} onClick={handleGoogleSignIn}>
+                  <button
+                    className={classes.signUpButton}
+                    onClick={handleGoogleSignIn}
+                  >
                     <img
                       style={{
                         width: "2.5vw",
@@ -194,7 +201,10 @@ const Modaljs = (props) => {
                         : "Sign Up with Google"}
                     </span>
                   </button>
-                  <button className={classes.signUpButton}>
+                  <button
+                    className={classes.signUpButton}
+                    onClick={handleFacebookSigIn}
+                  >
                     <img
                       style={{ width: "1.3vw", height: "2.5vw", float: "left" }}
                       src={Facebook}

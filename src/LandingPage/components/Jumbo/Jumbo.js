@@ -9,14 +9,25 @@ const Jumbo = () => {
           className="jumbotron"
           style={{
             backgroundColor: "#f7f7f7",
-            borderRadius: "7.17vw",
-            marginBottom: "0",
+            borderRadius: "98px",
           }}
         >
-          <div className="row justify-content-center">
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+            }}
+          >
             <h1 className={classes.heading}>How it works</h1>
           </div>
-          <div className="row justify-content-around">
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-around",
+            }}
+          >
             <div className={classes.column}>
               <li className={classes.lib}>1</li>
               <p className={classes.p2}>Measure</p>
@@ -49,7 +60,7 @@ const Jumbo = () => {
           className="jumbotron"
           style={{ backgroundColor: "#f7f7f7", borderRadius: "98px" }}
         >
-          <div style={{width: "100%"}}>
+          <div style={{ width: "100%" }}>
             <div className="row justify-content-center">
               <h1 className={classes.heading}>How it works</h1>
             </div>
@@ -90,51 +101,6 @@ const Jumbo = () => {
               </div>
             </div>
           </div>
-          {/* <div className="row justify-content-around">
-            <div className={classes.circle}>2</div>
-            <div>
-              <p className={classes.p2}>Understand</p>
-              <p className={classes.text}>
-                your performance<br></br> across all learning outcomes.
-              </p>
-            </div>
-          </div>
-          <div className="row justify-content-around">
-            <div className={classes.circle}>3</div>
-            <div>
-              <p className={classes.p2}>Measure</p>
-              <p className={classes.text}>
-                your grades and track improvement from our dashboard.
-              </p>
-            </div>
-          </div> */}
-          {/* <div className="row justify-content-around">
-            <div>
-              <div className={classes.circle}>1</div>
-              <div className={classes.circle}>2</div>
-              <div className={classes.circle}>3</div>
-            </div>
-            <div>
-              <div>
-                <p className={classes.p2}>Improve</p>
-                <p className={classes.text}>
-                  your ability so you can practice the topics that matter.
-                </p>
-              </div>
-              <div>
-                <p className={classes.p2}>Understand</p>
-                <p className={classes.text}>
-                  your performance across all learning outcomes
-                </p>
-              </div>
-              <div>
-                <p className={classes.p2}>Measure</p>
-                <p className={classes.text}>
-                  your grades and track improvement from our dashboard.
-                </p>
-              </div>
-            </div>
-          </div> */}
         </div>
       </div>
     </div>

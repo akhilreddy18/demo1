@@ -61,6 +61,8 @@ const style = {
     fontSize: "20px",
     color: "#050505",
     fontWeight: "550",
+    marginLeft: "20px",
+    paddingTop: "0",
   },
 };
 

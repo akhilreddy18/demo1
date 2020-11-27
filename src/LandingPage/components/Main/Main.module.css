@@ -80,13 +80,13 @@
 }
 
 .img {
-  width: 40vw;
-  /* position: absolute;
-  left: 60vw;
-  top: 5.5vw;
+  width: 41.5vw;
+  position: absolute;
+  left: 57.4vw;
+  top: 5.7vw;
   right: 0vw;
   bottom: 0;
-  z-index: -1; */
+  z-index: -1;
 }
 
 .tryButton {
