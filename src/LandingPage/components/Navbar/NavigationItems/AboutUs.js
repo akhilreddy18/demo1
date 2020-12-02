@@ -42,7 +42,7 @@ const AboutUs = () => {
               color: "#000",
               fontSize: "2.12vw",
               width: "30vw",
-              marginTop: "4vw",
+              marginTop: "10vw",
               marginRight: "2.2vw",
               textAlign: "center",
             }}
@@ -65,7 +65,40 @@ const AboutUs = () => {
             >
               Why personalised learning?
             </p>
-            <img src={Logo1} style={{ width: "50vw", height: "40vw" }}></img>
+            <p
+              style={{
+                fontSize: "2.05vw",
+                color: "#000",
+                width: "40vw",
+                marginBottom: "1vw",
+              }}
+            >
+              Every class has students of varying needs and abilities. Teachers
+              don’t have the time to identify exactly what each student needs
+              and address them individually.
+            </p>
+            <p
+              style={{
+                fontSize: "2.05vw",
+                color: "#000",
+                width: "40vw",
+                marginBottom: "1vw",
+              }}
+            >
+              Because every lesson builds up on the previous one, unaddressed
+              misconceptions can compound and have detrimental effects
+              long-term.
+            </p>
+            <p
+              style={{
+                fontSize: "2.05vw",
+                color: "#000",
+                width: "40vw",
+                marginBottom: "1vw",
+              }}
+            >
+              That’s where we come in…
+            </p>
           </div>
           <img
             src={Logo4}

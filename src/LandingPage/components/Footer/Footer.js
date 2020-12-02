@@ -5,16 +5,65 @@ import TwitterIcon from "@material-ui/icons/Twitter";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import ContactUs from "../ContactUs/ContactUs";
 import Community from "../Communtiy/Community";
+import Communities from "../Communties/Communities";
 
 const Footer = () => {
   const [contact, setContact] = useState(false);
+  const [show, setShow] = useState(false);
+  const [title, setTitle] = useState("");
+  const [school, setSchool] = useState(false);
+  const [investors, setInvestors] = useState(false);
+  const [tutor, setTutor] = useState(false);
+  const [parent, setParent] = useState(false);
+  const [tuitionProvider, setTuitionProvider] = useState(false);
   const [community, setCommunity] = useState(false);
 
   const handleContact = () => setContact(true);
   const handleCommunity = () => setCommunity(true);
+  // const handleClose = () => {
+  //   setContact(false);
+  //   setCommunity(false);
+  // };
+
+  const handleSchool = () => {
+    setShow(true);
+    setTitle("Schools");
+    setSchool(true);
+  };
+
+  const handleInvestors = () => {
+    setShow(true);
+    setTitle("Investors");
+    setInvestors(true);
+  };
+
+  const handleTutor = () => {
+    setShow(true);
+    setTitle("Tutor");
+    setTutor(true);
+  };
+
+  const handleTuitionProvider = () => {
+    setShow(true);
+    setTitle("Tuition Provider");
+    setTuitionProvider(true);
+  };
+
+  const handleParent = () => {
+    setShow(true);
+    setTitle("Parent");
+    setParent(true);
+  };
+
   const handleClose = () => {
     setContact(false);
-    setCommunity(false);
+    setShow(false);
+    setSchool(false);
+    setInvestors(false);
+    setParent(false);
+    setTutor(false);
+    setTuitionProvider(false);
+    setTitle("");
   };
 
   return (
@@ -34,34 +83,43 @@ const Footer = () => {
             </p>
             <div className={classes.column}>
               <p className={classes.anchor}>Company</p>
-              <a className={classes.an} href="/home">
-                Home
-              </a>
               <a className={classes.an} href="/aboutus">
                 About us
               </a>
               <a className={classes.an} href="/resources">
                 Resources
               </a>
-              <a className={classes.an} href="/signup">
-                Sign up
+              <a className={classes.an} href="#careers">
+                Careers
+              </a>
+              <a className={classes.an} href="#try">
+                Try it for Free
               </a>
             </div>
             <div className={classes.column}>
-              <p className={classes.anchor} onClick={handleCommunity}>
-                Community
-              </p>
-              <a className={classes.an} href="/home">
+              <p className={classes.anchor}>Community</p>
+              <a className={classes.an} href="#parent" onClick={handleParent}>
                 Parents
               </a>
-              <a className={classes.an} href="/aboutus">
+              <a className={classes.an} href="#schools" onClick={handleSchool}>
                 Schools
               </a>
-              <a className={classes.an} href="/resources">
+              <a
+                className={classes.an}
+                href="#investors"
+                onClick={handleInvestors}
+              >
                 Investors
               </a>
-              <a className={classes.an} href="/signup">
-                Careers
+              <a className={classes.an} href="#schools" onClick={handleTutor}>
+                Tutor
+              </a>
+              <a
+                className={classes.an}
+                href="#schools"
+                onClick={handleTuitionProvider}
+              >
+                Tuition Provider
               </a>
             </div>
             <div className={classes.column}>
@@ -80,7 +138,7 @@ const Footer = () => {
               <p className={classes.anchor} onClick={handleContact}>
                 Contact Us
               </p>
-              <a className={classes.an} href="/home">
+              <a className={classes.an} href="mailto:support@edicat.co.uk">
                 support@edicat.co.uk
               </a>
             </div>
@@ -113,6 +171,16 @@ const Footer = () => {
       </div>
       <ContactUs show={contact} handleClose={handleClose}></ContactUs>
       <Community show={community} handleClose={handleClose}></Community>
+      <Communities
+        show={show}
+        school={school}
+        investors={investors}
+        parent={parent}
+        tutor={tutor}
+        tuitionProvider={tuitionProvider}
+        handleClose={handleClose}
+        title={title}
+      ></Communities>
       <div className={classes.mobileOnly}>
         <div className={classes.row}>
           <p

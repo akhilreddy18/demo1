@@ -47,7 +47,7 @@
 .input {
   width: 18vw;
   height: 3vw;
-  font-size: 1.2vw;
+  font-size: 1vw;
   border: 1px solid #e2e2e6;
 }
 
@@ -61,4 +61,43 @@
   border-radius: 4px;
   padding: 0;
   border: none;
+}
+
+.googlebtn {
+  height: 4vw;
+  background-color: #fff;
+  border-radius: 2px;
+  /* box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25); */
+  box-shadow: 2px 2px 8px #ccc;
+}
+.googlebtn:hover {
+  cursor: pointer;
+}
+.google-icon-wrapper {
+  position: absolute;
+  margin-top: 1px;
+  margin-left: 1px;
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+.googleIcon {
+  position: absolute;
+  margin-top: 11px;
+  margin-left: 11px;
+  width: 18px;
+  height: 18px;
+}
+.btnText {
+  font-size: 1.2vw;
+  font-weight: 550;
+  margin-bottom: 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }

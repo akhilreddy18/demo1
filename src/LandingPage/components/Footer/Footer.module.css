@@ -6,7 +6,7 @@
   /* display: flex;
   flex-direction: row;
   justify-content: space-around; */
-  padding-top: 1.09vw;
+  padding: 0.6vw 0;
   /* align-items: center; */
 }
 
@@ -35,7 +35,6 @@ a:hover {
   text-decoration: none;
   font-weight: 550;
   margin-bottom: 0;
-  cursor: pointer;
 }
 .column {
   display: flex;

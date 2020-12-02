@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Category from "../Category/Category";
 import Features from "../Features/Features";
 import Jumbo from "../Jumbo/Jumbo";
@@ -17,8 +17,13 @@ import Logo7 from "../../../assets/Images/previous.svg";
 import Logo8 from "../../../assets/Images/image6.png";
 import Logo9 from "../../../assets/Images/Path 163.svg";
 import { ClassSharp } from "@material-ui/icons";
+import Modaljs from "../Modal/Modal";
 
 const Main = () => {
+  const [show, setShow] = useState(false);
+  const handleShow = () => setShow(true);
+  const handleClose = () => setShow(false);
+
   return (
     <div>
       {/* <div className={classes.mainBg}></div> */}
@@ -40,7 +45,9 @@ const Main = () => {
             Our assessment platform learns your ability and generates questions
             targeting your growth areas <br></br> to accelerate improvement
           </p>
-          <button className={classes.tryButton}>TRY IT FOR FREE</button>
+          <button className={classes.tryButton} onClick={handleShow}>
+            TRY IT FOR FREE
+          </button>
         </div>
         <img src={Logo} alt="Logo" className={classes.img}></img>
       </div>
@@ -96,6 +103,7 @@ const Main = () => {
           child.
         </p>
       </div>
+      <Modaljs show={show} handleClose={handleClose}></Modaljs>
     </div>
   );
 };

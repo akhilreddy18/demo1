@@ -63,6 +63,7 @@ const style = {
     fontWeight: "550",
     marginLeft: "20px",
     paddingTop: "0",
+    paddingBottom: "0",
   },
 };
 

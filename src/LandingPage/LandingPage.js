@@ -24,7 +24,7 @@ const LandingPage = () => {
   };
   return (
     <div>
-      {redirect()}
+      {/* {redirect()} */}
       <Navbar />
       <Main />
       <Foooter />

@@ -47,147 +47,146 @@ const Communities = (props) => {
                 </p>
               </Col>
             </div>
-            <div style={{ border: "2px solid", paddingTop: "2vw" }}>
-              <Col className={classes.column}>
-                <p
+            <div
+              style={{ border: "2px solid", padding: "1vw 1.5vw" }}
+              className={classes.column}
+            >
+              {/* <Col className={classes.column}> */}
+              <p
+                style={{
+                  color: "#0f0e0e",
+                  fontSize: "1.7vw",
+                  fontWeight: "550",
+                  textAlign: "center",
+                }}
+              >
+                Get in touch
+              </p>
+              <div className={classes.column}>
+                <div style={{ display: props.school ? "block" : "none" }}>
+                  <label style={style.label}>School Name*</label>
+                  <input
+                    type="text"
+                    placeholder="School Name"
+                    className={classes.input}
+                  ></input>
+                </div>
+                <div style={{ display: props.investors ? "block" : "none" }}>
+                  <label style={style.label}>
+                    Investors Name/Organisation*
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    className={classes.input}
+                  ></input>
+                </div>
+                <div
                   style={{
-                    color: "#0f0e0e",
-                    fontSize: "1.7vw",
-                    fontWeight: "550",
-                    textAlign: "center",
+                    display: props.tuitionProvider ? "block" : "none",
                   }}
                 >
-                  Get in touch
-                </p>
-                <form>
-                  <div className={classes.column}>
-                    <div style={{ display: props.school ? "block" : "none" }}>
-                      <label style={style.label}>School Name*</label>
-                      <input
-                        type="text"
-                        placeholder="School Name"
-                        className={classes.input}
-                      ></input>
-                    </div>
-                    <div
-                      style={{ display: props.investors ? "block" : "none" }}
-                    >
-                      <label style={style.label}>
-                        Investors Name/Organisation*
-                      </label>
-                      <input
-                        type="text"
-                        placeholder="Name"
-                        className={classes.input}
-                      ></input>
-                    </div>
-                    <div
-                      style={{
-                        display: props.tuitionProvider ? "block" : "none",
-                      }}
-                    >
-                      <label style={style.label}>Tuition Provider Name*</label>
-                      <input
-                        type="text"
-                        placeholder="Organisation name"
-                        className={classes.input}
-                      ></input>
-                    </div>
-                    <div
-                      style={{
-                        display: props.tutor || props.parent ? "block" : "none",
-                      }}
-                    >
-                      <label style={style.label}>Full Name*</label>
-                      <input
-                        type="text"
-                        placeholder="Full Name"
-                        className={classes.input}
-                      ></input>
-                    </div>
-                    <div>
-                      <label style={style.label}>Email Address*</label>
-                      <input
-                        type="text"
-                        placeholder="Email"
-                        className={classes.input}
-                      ></input>
-                    </div>
-                    <div>
-                      <label style={style.label}>Phone Number</label>
-                      <input
-                        type="text"
-                        placeholder="Phone Number"
-                        className={classes.input}
-                      ></input>
-                    </div>
-                    <div style={{ display: props.tutor ? "block" : "none" }}>
-                      <label style={style.label}>Academic Levels*</label>
-                      <input
-                        type="text"
-                        placeholder="Academic levels"
-                        className={classes.input}
-                      ></input>
-                    </div>
-                    <div style={{ display: props.tutor ? "block" : "none" }}>
-                      <label style={style.label}>Number of Students*</label>
-                      <input
-                        type="text"
-                        placeholder="Number of students"
-                        className={classes.input}
-                      ></input>
-                    </div>
-                    <div style={{ display: props.parent ? "block" : "none" }}>
-                      <label style={style.label}>Child's academic year*</label>
-                      <input
-                        type="text"
-                        placeholder="Child's academic year"
-                        className={classes.input}
-                      ></input>
-                    </div>
-                    <div>
-                      <label style={style.label}>Query</label>
-                      <input
-                        type="text"
-                        placeholder="Type your message"
-                        style={{
-                          width: "18vw",
-                          height: "7vw",
-                          fontSize: "1.2vw",
-                          border: "1px solid #e2e2e6",
-                        }}
-                      ></input>
-                    </div>
-                    <div
-                      style={{
-                        display:
-                          props.parent || props.school ? "inlineBlock" : "none",
-                        margin: "1vw",
-                      }}
-                      className="row justify-content-center align-items-center"
-                    >
-                      <input type="checkbox"></input>
-                      <p
-                        style={{
-                          maxWidth: "15vw",
-                          fontSize: "1vw",
-                          textAlign: "center",
-                          color: "#0f0e0e",
-                          marginBottom: "0",
-                        }}
-                      >
-                        I would like to receive special offers, exam tips and
-                        updates
-                      </p>
-                    </div>
-                    <input
-                      type="submit"
-                      placeholder="Submit"
-                      className={classes.submitForm}
-                    ></input>
-                  </div>
-                </form>
-              </Col>
+                  <label style={style.label}>Tuition Provider Name*</label>
+                  <input
+                    type="text"
+                    placeholder="Organisation name"
+                    className={classes.input}
+                  ></input>
+                </div>
+                <div
+                  style={{
+                    display: props.tutor || props.parent ? "block" : "none",
+                  }}
+                >
+                  <label style={style.label}>Full Name*</label>
+                  <input
+                    type="text"
+                    placeholder="Full Name"
+                    className={classes.input}
+                  ></input>
+                </div>
+                <div>
+                  <label style={style.label}>Email Address*</label>
+                  <input
+                    type="text"
+                    placeholder="Email"
+                    className={classes.input}
+                  ></input>
+                </div>
+                <div>
+                  <label style={style.label}>Phone Number</label>
+                  <input
+                    type="text"
+                    placeholder="Phone Number"
+                    className={classes.input}
+                  ></input>
+                </div>
+                <div style={{ display: props.tutor ? "block" : "none" }}>
+                  <label style={style.label}>Academic Levels*</label>
+                  <input
+                    type="text"
+                    placeholder="Academic levels"
+                    className={classes.input}
+                  ></input>
+                </div>
+                <div style={{ display: props.tutor ? "block" : "none" }}>
+                  <label style={style.label}>Number of Students*</label>
+                  <input
+                    type="text"
+                    placeholder="Number of students"
+                    className={classes.input}
+                  ></input>
+                </div>
+                <div style={{ display: props.parent ? "block" : "none" }}>
+                  <label style={style.label}>Child's academic year*</label>
+                  <input
+                    type="text"
+                    placeholder="Child's academic year"
+                    className={classes.input}
+                  ></input>
+                </div>
+                <div>
+                  <label style={style.label}>Query</label>
+                  <input
+                    type="text"
+                    placeholder="Type your message"
+                    style={{
+                      width: "18vw",
+                      height: "7vw",
+                      fontSize: "1.2vw",
+                      border: "1px solid #e2e2e6",
+                    }}
+                  ></input>
+                </div>
+                <div
+                  style={{
+                    display:
+                      props.parent || props.school ? "inlineBlock" : "none",
+                    margin: "1vw",
+                  }}
+                  className="row justify-content-center align-items-center"
+                >
+                  <input type="checkbox"></input>
+                  <p
+                    style={{
+                      maxWidth: "15vw",
+                      fontSize: "1vw",
+                      textAlign: "center",
+                      color: "#0f0e0e",
+                      marginBottom: "0",
+                    }}
+                  >
+                    I would like to receive special offers, exam tips and
+                    updates
+                  </p>
+                </div>
+              </div>
+              <input
+                type="submit"
+                placeholder="Submit"
+                className={classes.submitForm}
+              ></input>
+              {/* </Col> */}
             </div>
           </Row>
         </Modal.Body>
@@ -200,7 +199,7 @@ const style = {
   label: {
     display: "block",
     fontWeight: "bold",
-    fontSize: "0.8vw",
+    fontSize: "1.2vw",
     marginBottom: "0",
   },
 };

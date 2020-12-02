@@ -20,7 +20,7 @@
 }
 
 .loginButton:hover,
-.loginButton:visited {
+.loginButton:focus {
   background-color: #3d2df5;
   border-color: #3d2ef5;
 }

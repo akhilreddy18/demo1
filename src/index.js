@@ -8,6 +8,7 @@ import "./index.css";
 import Admin from "./Dashboard/Admin.js";
 import LandingPage from "./LandingPage/LandingPage.js";
 import AboutUs from "./LandingPage/components/Navbar/NavigationItems/AboutUs";
+import Modaljs from "./LandingPage/components/Modal/Modal";
 
 const { Amplify, Auth } = require("aws-amplify");
 const config = require("./config");
@@ -68,6 +69,7 @@ ReactDOM.render(
       <Route exact path="/" component={LandingPage} />
       <Route path="/admin" component={Admin} />
       <Route path="/aboutus" component={AboutUs} />
+      <Route path="/signup" component={Modaljs} />
       {/* <Redirect to="/"></Redirect> */}
     </Switch>
   </Router>,
