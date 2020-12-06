@@ -1,9 +1,9 @@
 import React from "react";
 import classes from "./Navbar.module.css";
 import { Nav, Navbar, Form, Button } from "react-bootstrap";
-
 import { useState } from "react";
 import Modaljs from "../Modal/Modal";
+import CustomModal from "../CustomModal/CustomModal";
 
 const NavbarComponent = () => {
   const [show, setShow] = useState(false);
@@ -46,7 +46,49 @@ const NavbarComponent = () => {
           </Form>
         </Navbar.Collapse>
       </Navbar>
-      <Modaljs auth={auth} show={show} handleClose={handleClose}></Modaljs>
+      {/* <Modaljs auth={auth} show={show} handleClose={handleClose}></Modaljs> */}
+      <CustomModal show={show} modalClosed={handleClose}>
+        <div
+          style={{
+            backgroundColor: "#186aa5",
+            color: "#fff",
+            textAlign: "center",
+            fontSize: "30px",
+            fontWeight: "bold",
+          }}
+        >
+          Sign UP
+        </div>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-around",
+            padding: "20px 0",
+          }}
+        >
+          <div style={{ border: "2px solid", padding: "10px 20px" }}>
+            <h1>Sign Up</h1>
+            <label style={{ display: "block" }}>First Name*</label>
+            <input type="text"></input>
+            <label style={{ display: "block" }}>Last Name*</label>
+            <input type="text"></input>
+            <label style={{ display: "block" }}>Email*</label>
+            <input type="text"></input>
+            <label style={{ display: "block" }}>Password*</label>
+            <input type="text"></input>
+            <label style={{ display: "block" }}>Confirm Password*</label>
+            <input type="text"></input>
+          </div>
+          <div style={{ border: "2px solid", padding: "10px 20px" }}>
+            <h1>Login</h1>
+            <label style={{ display: "block" }}>Email*</label>
+            <input type="text"></input>
+            <label style={{ display: "block" }}>Password*</label>
+            <input type="text"></input>
+          </div>
+        </div>
+      </CustomModal>
     </>
   );
 };
