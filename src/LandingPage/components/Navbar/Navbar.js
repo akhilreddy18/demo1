@@ -47,7 +47,7 @@ const NavbarComponent = () => {
         </Navbar.Collapse>
       </Navbar>
       {/* <Modaljs auth={auth} show={show} handleClose={handleClose}></Modaljs> */}
-      <CustomModal show={show} modalClosed={handleClose}>
+      <CustomModal auth={auth} show={show} modalClosed={handleClose}>
         <div
           style={{
             backgroundColor: "#186aa5",

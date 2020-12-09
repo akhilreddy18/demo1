@@ -7,8 +7,6 @@ import Mail from "../../../assets/Images/Icon Mail.png";
 import Facebook from "../../../assets/Images/facebook-icon.png";
 import Google from "../../../assets/Images/google-icon.png";
 import { ButtonGroup, ToggleButton } from "react-bootstrap";
-// import { Redirect } from "react-router-dom";
-// import { Switch } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
 
 const { Auth, Hub } = require("aws-amplify");
