@@ -32,6 +32,9 @@ const NavbarComponent = () => {
             <Nav.Link href="/" style={style.links}>
               Home
             </Nav.Link>
+            <Nav.Link href="http://ec2-35-176-246-229.eu-west-2.compute.amazonaws.com:3838/assessment/" style={style.links}>
+              shiny
+            </Nav.Link>
             <Nav.Link href="/aboutus" style={style.links}>
               About Us
             </Nav.Link>

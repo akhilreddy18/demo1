@@ -7,7 +7,7 @@
   box-shadow: 1px 1px 1px black;
   /* padding: 16px; */
   left: 20%;
-  top: 10%;
+  top: 5%;
   box-sizing: border-box;
   border-radius: 5px;
   transition: all 0.3s ease-out;
@@ -22,7 +22,7 @@
 
 .customModal {
   width: 80vw;
-  height: 90vh;
+  height: 80vh;
 }
 
 .combineButton {
@@ -44,7 +44,7 @@
   background-color: #fff;
   margin: 1vw 0;
   padding: 0 1vw;
-  height: 4vw;
+  height: 3vw;
   box-shadow: 2px 2px 8px #ccc;
   border: none;
   font-size: 1.1vw;
